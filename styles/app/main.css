@@ -165,7 +165,9 @@ h1 {
 .eu-logo {
     float: left;
     margin-right: 30px;
-    border: solid 3px #ddd;
+    // border: solid 3px #ddd;
+    width: 100%;
+    max-width: 512px;
 }
 
 .eu-text {
@@ -193,6 +195,10 @@ h1 {
     }
     .container.top {
         text-align: center;
+    }
+
+    h1{
+        font-size: 32px;
     }
 }
 
