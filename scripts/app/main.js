@@ -1,6 +1,6 @@
 var langs = {
     EN: {
-        'ProjectTitle': 'Name Of the Project',
+        'ProjectTitle': 'About Us',
         'AboutUs': 'About Us',
         'AboutProject': 'About the project',
         'News': 'News',
@@ -27,7 +27,7 @@ var langs = {
         'phone': 'Phone'
     },
     GE: {
-        'ProjectTitle': 'პროექტის დასახელება',
+        'ProjectTitle': 'ჩვენ შესახებ',
         'AboutUs': 'ჩვენ შესახებ',
         'AboutProject': 'პროექტის შესახებ',
         'News': 'სიახლეები',
