@@ -58,59 +58,24 @@ var langs = {
 var publications = [{
         id: 1,
         link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #1', 'GE': 'პუბლიკაცია #1' }
+        image: 'http://adventurefittravel.com/images/ADVFBloggingTeam/BrianaBowley/bottom.jpg',
+        date: 'Nov 29, 2017',
+        title: { 'EN': 'Competition policy', 'GE': 'კონკურენციის პოლიტიკა' }
     },
     {
         id: 2,
         link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #2', 'GE': 'პუბლიკაცია #2' }
+        image: 'http://st2.agora.md/news/big/din-momentul-aplicarii-dcfta--republica-moldova-a-exportat-in-ue-marfuri-in-valoare-de-peste-2-2-miliarde--usd-22065.jpg',
+        date: 'Nov 29, 2017',
+        title: { 'EN': 'The Association Agreement', 'GE': 'ასოცირების შეთანხმება' }
     },
     {
         id: 3,
         link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #3', 'GE': 'პუბლიკაცია #3' }
-
-    },
-    {
-        id: 4,
-        link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #4', 'GE': 'პუბლიკაცია #4' }
-    },
-    {
-        id: 5,
-        link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #5', 'GE': 'პუბლიკაცია #5' }
-    },
-    {
-        id: 6,
-        link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #6', 'GE': 'პუბლიკაცია #6' }
-    },
-    {
-        id: 7,
-        link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #8', 'GE': 'პუბლიკაცია #8' }
-    }, {
-        id: 0,
-        link: '#',
-        image: 'http://fighting-occ.mk/wp-content/uploads/2017/06/Ministerstvo-Pravda.jpg',
-        date: 'JUNE 22, 2017',
-        title: { 'EN': 'PUBLICATION #9', 'GE': 'პუბლიკაცია #9' }
-    },
+        image: 'https://www.medicaidannuity.com/wp-content/uploads/2016/04/Giving-Cash.jpg',
+        date: 'Nov 29, 2017',
+        title: { 'EN': 'The DCFTA', 'GE': 'DCFTA' }
+    }
 ]
 
 var multimedia = [{
