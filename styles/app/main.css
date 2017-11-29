@@ -12,6 +12,7 @@ input.form-control:active{
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 .affix {
@@ -133,7 +134,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 h1,
@@ -151,7 +152,7 @@ h1>span {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 h1 {
@@ -165,7 +166,7 @@ h1 {
 .eu-logo {
     float: left;
     margin-right: 30px;
-    // border: solid 3px #ddd;
+    /* border: solid 3px #ddd;*/
     width: 100%;
     max-width: 512px;
 }
@@ -361,4 +362,17 @@ h1 {
 .coverage-link,
 .coverage-link:hover {
     text-decoration: none;
+}
+
+/* anchor (goto) */
+
+
+#section22::before, #section21::before, #section31::before, #section32::before, 
+    #section33::before, #section4::before{
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+    pointer-events: none;
 }
