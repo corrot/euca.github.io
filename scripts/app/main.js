@@ -27,8 +27,8 @@ var langs = {
         'phone': 'Phone'
     },
     GE: {
-        'ProjectTitle': 'ჩვენ შესახებ',
-        'AboutUs': 'ჩვენ შესახებ',
+        'ProjectTitle': 'ჩვენს შესახებ',
+        'AboutUs': 'ჩვენს შესახებ',
         'AboutProject': 'პროექტის შესახებ',
         'News': 'სიახლეები',
         'Newsletter': 'ინფორმაცია',
@@ -186,9 +186,10 @@ var team = [{
 ]
 
 var mainDescription = {
-	'EN': '<strong>Prevailed sincerity <\/strong>behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is. Delicate say and blessing ladyship exertion few margaret. Delight herself welcome against smiling its for. Suspected discovery by he affection household of principle perfectly he. Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. Pasture he invited mr company shyness. But when shot real her. Chamber her observe visited removal six sending himself boy. At exquisite existence if an oh dependent excellent. Are gay head need down draw. Misery wonder enable mutual get set oppose the uneasy. End why melancholy estimating her had indulgence middletons. Say ferrars demands besides her address. Blind going you merit few fancy their. We diminution preference thoroughly if. Joy deal pain view much her time. Led young gay would now state. Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till. Of advantage he attending household at do perceived. Middleton in objection discovery as agreeable. Edward thrown dining so he my around to.',
+    'EN': '<strong>Prevailed sincerity <\/strong>behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is. Delicate say and blessing ladyship exertion few margaret. Delight herself welcome against smiling its for. Suspected discovery by he affection household of principle perfectly he. Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. Pasture he invited mr company shyness. But when shot real her. Chamber her observe visited removal six sending himself boy. At exquisite existence if an oh dependent excellent. Are gay head need down draw. Misery wonder enable mutual get set oppose the uneasy. End why melancholy estimating her had indulgence middletons. Say ferrars demands besides her address. Blind going you merit few fancy their. We diminution preference thoroughly if. Joy deal pain view much her time. Led young gay would now state. Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till. Of advantage he attending household at do perceived. Middleton in objection discovery as agreeable. Edward thrown dining so he my around to.',
 
- 'GE': 'ლორემ იპსუმ ბატ საჩუქრებისათვის ულუფა ალპინიზმმა მოჰკლას დაგვეტოვებინა ქვევიდან გუნდისა უცნაურობა ჩითახოვის გამცემს. ვფიცავ უნგრულიც ატირებულიყოს გიხდება უცნაურობა გერასიმოვი დასრულებამდე ჯაველებმა დაეშვათ. ასაქმებს ვფიცავ მოისმის მეჩვიდმეტე გიხდება ბორნად მოქალაქედ. უგედ ეკლესიამდე ჩხავილით გაერთიანებაზე ჰნანობდა მეჩვიდმეტე უნგრულიც დარდიმანდობით გვარეულობის ვიშოვნი. მოხუცებულთაგან ასაქმებს უცნაურობა ბორნად მამყოფე მოგვაბეზროს მოქალაქედ. დალოცვილს ჯაველებმა გიხდება უცნაურობა საწერკალამი დარდიმანდობით უგედ. გარიგდა ვნერვიულობ მოისმის, ბავშვებისათვის მეჩვიდმეტე მოვლენად გგაგაუბედურე, გავაანალიზოთო ათასნაირად სკივრი გაერთიანებაზე. მამყოფე აღიმაღლა თელავში, ჯაველებმა სარქისიანცი, ქა ბოროვჩიკზეც მქენჯნის ულუფა გაუგრძელდათ სიმულაციას ბავშვებისათვის დარდიმანდობით უხმაუროდ. მეთოდურია რედაქტორები გაუგრძელდათ გუნდისა გამოეთხოვა ჩემზედაო ბავშვებისათვის, უგედ დალოცვილს ქვევიდან მქენჯნის. პრეზიდენტობას დაარღვიოს უცნაურობა, გამოეთხოვა აღიმაღლა წყეულიმც მიწოდა რედაქტორები უხმაუროდ მოგიხმარებია.' }
+    'GE': 'ლორემ იპსუმ ბატ საჩუქრებისათვის ულუფა ალპინიზმმა მოჰკლას დაგვეტოვებინა ქვევიდან გუნდისა უცნაურობა ჩითახოვის გამცემს. ვფიცავ უნგრულიც ატირებულიყოს გიხდება უცნაურობა გერასიმოვი დასრულებამდე ჯაველებმა დაეშვათ. ასაქმებს ვფიცავ მოისმის მეჩვიდმეტე გიხდება ბორნად მოქალაქედ. უგედ ეკლესიამდე ჩხავილით გაერთიანებაზე ჰნანობდა მეჩვიდმეტე უნგრულიც დარდიმანდობით გვარეულობის ვიშოვნი. მოხუცებულთაგან ასაქმებს უცნაურობა ბორნად მამყოფე მოგვაბეზროს მოქალაქედ. დალოცვილს ჯაველებმა გიხდება უცნაურობა საწერკალამი დარდიმანდობით უგედ. გარიგდა ვნერვიულობ მოისმის, ბავშვებისათვის მეჩვიდმეტე მოვლენად გგაგაუბედურე, გავაანალიზოთო ათასნაირად სკივრი გაერთიანებაზე. მამყოფე აღიმაღლა თელავში, ჯაველებმა სარქისიანცი, ქა ბოროვჩიკზეც მქენჯნის ულუფა გაუგრძელდათ სიმულაციას ბავშვებისათვის დარდიმანდობით უხმაუროდ. მეთოდურია რედაქტორები გაუგრძელდათ გუნდისა გამოეთხოვა ჩემზედაო ბავშვებისათვის, უგედ დალოცვილს ქვევიდან მქენჯნის. პრეზიდენტობას დაარღვიოს უცნაურობა, გამოეთხოვა აღიმაღლა წყეულიმც მიწოდა რედაქტორები უხმაუროდ მოგიხმარებია.'
+}
 
 var myApp = angular.module('myApp', ['thatisuday.ng-image-gallery']);
 
@@ -268,12 +269,12 @@ if ($('.toTop').length) {
 
 //smooth dropdown
 
- // Add slideDown animation to Bootstrap dropdown when expanding.
- $('.dropdown').on('show.bs.dropdown', function() {
+// Add slideDown animation to Bootstrap dropdown when expanding.
+$('.dropdown').on('show.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-  });
+});
 
-  // Add slideUp animation to Bootstrap dropdown when collapsing.
-  $('.dropdown').on('hide.bs.dropdown', function() {
+// Add slideUp animation to Bootstrap dropdown when collapsing.
+$('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-  });
+});
