@@ -341,8 +341,8 @@ h1 {
 
 .langs {
     position: absolute;
-    right: 0;
-    top: 15px;;
+    right: -35px;
+    top: 13px;
     color: #479aff;
     cursor: pointer;
     font-weight: bold;
@@ -377,4 +377,10 @@ h1 {
     height: 100px; 
     visibility: hidden; 
     pointer-events: none;
+}
+
+#flag{
+    width: 33px;
+    height: auto;
+    margin-left: 5px;
 }

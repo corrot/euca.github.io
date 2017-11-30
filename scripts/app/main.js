@@ -189,14 +189,18 @@ myApp.controller('myCtrl', [
 
         $scope.flags = [{ id: 0, url: 'GE', title: 'EN' }, { id: 1, url: 'EN', title: 'GE' }]
         $scope.lang = langs['EN'];
+        $scope.flagImgURL = "images/ge.png";
         $scope.activeLang = $scope.flags[0];
         $scope.changeLanguage = function(o) {
             // $scope.activeLang = $scope.activeLang == o || !$scope.activeLang ? $scope.flags[1] : $scope.flags[0];
             if (o == $scope.flags[0]) {
                 $scope.activeLang = $scope.flags[1];
+                $scope.flagImgURL = "images/en.png";
             }
             if (o == $scope.flags[1]) {
                 $scope.activeLang = $scope.flags[0];
+                $scope.flagImgURL = "images/ge.png";
+                
             }
             $scope.lang = langs[$scope.activeLang.title];
         }
@@ -234,12 +238,10 @@ if ($('.toTop').length) {
 
 //smooth dropdown
 
-// Add slideDown animation to Bootstrap dropdown when expanding.
 $('.dropdown').on('show.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
 });
 
-// Add slideUp animation to Bootstrap dropdown when collapsing.
 $('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });

@@ -44,11 +44,11 @@
             <div>
                 <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#section1"><span ng-bind="lang['Home']"></span></a></li>
+                        <li class="active"><a href="index.html"><span ng-bind="lang['Home']"></span></a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#section21"><span ng-bind="lang['AboutProject']"></span></a></li>
-                                <li><a href="#section22"><span ng-bind="lang['OurTeam']"></span></a></li>
+                                <li><a href="team.html"><span ng-bind="lang['OurTeam']"></span></a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
@@ -76,6 +76,7 @@
                         </div>
                         <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
                             <span ng-bind="activeLang.url"></span>
+                            <span><img id="flag" ng-src="{{flagImgURL}}"></span>
                             <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
                         </div>
                     </div>
@@ -160,25 +161,6 @@
 </li>
 						</ul>
 						</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="section22" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['OurTeam']"></span></h1>
-                <br/>
-                <div class="row" style="margin-top: 40px">
-                    <div ng-repeat="p in team" class="col-sm-3">
-                        <div class="card">
-                            <div class="card-image-wrapper sm">
-                                <div class="card-image" style="background-image: url({{p.image}})"></div>
-                            </div>
-                            <div class="card-contents">
-                                <h5 class="card-date" ng-bind="p.title[activeLang.title]"></h5>
-                                <h4 class="card-title" ng-bind="p.description[activeLang.title]"></h4>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
