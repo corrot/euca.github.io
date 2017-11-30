@@ -1,3 +1,5 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+
 *{
     outline: none!important;
 }
@@ -12,6 +14,7 @@ input.form-control:active{
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 .affix {
@@ -133,7 +136,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', 'BPG Arial', sans-serif;
 }
 
 h1,
@@ -147,11 +150,11 @@ h6 {
 
 h1,
 h1>span {
-    font-family: "Droid Serif";
+    font-family: "Droid Serif", 'BPG Arial';
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oxygen', 'BPG Arial', sans-serif;
 }
 
 h1 {
@@ -165,9 +168,9 @@ h1 {
 .eu-logo {
     float: left;
     margin-right: 30px;
-    // border: solid 3px #ddd;
+    /* border: solid 3px #ddd;*/
     width: 100%;
-    max-width: 512px;
+    max-width: 400px;
 }
 
 .eu-text {
@@ -267,7 +270,7 @@ h1 {
 .card-title {
     font-size: 18px;
     text-align: center;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Old Standard TT', 'BPG Arial', serif;
 }
 
 .card-date {
@@ -338,8 +341,8 @@ h1 {
 
 .langs {
     position: absolute;
-    right: 0;
-    top: 15px;;
+    right: -35px;
+    top: 15px;
     color: #479aff;
     cursor: pointer;
     font-weight: bold;
@@ -364,8 +367,31 @@ h1 {
 }
 
 
+/* anchor (goto) */
+
+
+#section22::before, #section21::before, #section31::before, #section32::before, 
+    #section33::before, #section4::before{
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
 #flag{
     width: 33px;
     height: auto;
     margin-left: 5px;
+}
+
+.flagImage{
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.footer .container-fluid .row:nth-child(3){
+    background-color: red;    
 }

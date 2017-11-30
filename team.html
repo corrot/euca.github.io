@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Our Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="styles/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/lib/ng-image-gallery.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Old+Standard+TT|Oxygen|Roboto|Droid+Serif" rel="stylesheet">
+    <link href="styles/app/main.css" rel="stylesheet" />
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190">
+
+    <div id="section1" class="container-fluid heading-container">
+        <div class="container top">
+            <img class="eu-logo" src="images/main-logo.png" alt="logo" />
+            <!-- <h3 class="eu-text"><span ng-bind="lang['euForGeo']"></span></h3> -->
+        </div>
+    </div>
+    <nav class="navbar navbar-default" data-spy="affix" data-offset="136">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-right col-xs-9 visible-xs">
+                    <div class="input-group input-gutter-right">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                    <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
+                        <span ng-bind="activeLang.url"></span>
+                        <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
+                    </div>
+                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html"><span ng-bind="lang['Home']"></span></a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section21"><span ng-bind="lang['AboutProject']"></span></a></li>
+                                <li><a href="#section22"><span ng-bind="lang['OurTeam']"></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section31"><span ng-bind="lang['Newsletter']"></span></a></li>
+                                <li><a href="#section32"><span ng-bind="lang['Multimedia']"></span></a></li>
+                                <li><a href="#section33"><span ng-bind="lang['NewsCoverage']"></span></a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#section3"><span ng-bind="lang['ExploreTheResults']"></span></a></li> -->
+                        <li class=""><a href="#section4"><span ng-bind="lang['Contact']"></span></a></li>
+                        <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['WhoWeAre']"></span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41"><span ng-bind="lang['OurTeam']"></span></a></li>
+                                <li><a href="#section42"><span ng-bind="lang['Contact']"></span></a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <div class="navbar-right col-xs-4 hidden-xs">
+                        <div class="input-group input-gutter-right">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                        <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
+                            <span ng-bind="activeLang.url"></span>
+                            <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-content" id="content">
+        <div id="section22" class="section">
+            <div class="container">
+                <h1><span ng-bind="lang['OurTeam']"></span></h1>
+                <br/>
+                <div class="row" style="margin-top: 40px">
+                    <div ng-repeat="p in team" class="col-sm-3">
+                        <div class="card">
+                            <div class="card-image-wrapper sm">
+                                <div class="card-image" style="background-image: url({{p.image}})"></div>
+                            </div>
+                            <div class="card-contents">
+                                <h5 class="card-date" ng-bind="p.title[activeLang.title]"></h5>
+                                <h4 class="card-title" ng-bind="p.description[activeLang.title]"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div>
+            <div class="container">
+                <h1><span ng-bind="lang['News']"></span></h1>
+            </div>
+        </div> -->
+        
+        
+        <!-- <div id="section3" class="section">
+            <div class="container">
+                <h1><span ng-bind="lang['ExploreTheResults']"></span></h1>
+                <div class="text-container">
+                    <div><strong>PLACE FOR A TEXT</strong></div>
+                </div>
+            </div>
+        </div> -->
+        <div id="section4" class="section">
+            <div class="container">
+                <h1><span ng-bind="lang['Contact']"></span></h1>
+                <div class="col-sm-4 text-center">
+                    <h2 class="light-heading" ng-bind="lang['address']"></h2>
+                    <p ng-bind="lang['addressLine'][0]"></p>
+                    <p ng-bind="lang['addressLine'][1]"></p>
+                    <p ng-bind="lang['addressLine'][2]"></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h2 class="light-heading" ng-bind="lang['email']"></h2>
+                    <p ng-bind="lang['addressLine'][0]"></p>
+                    <p ng-bind="lang['addressLine'][1]"></p>
+                    <p ng-bind="lang['addressLine'][2]"></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h2 class="light-heading" ng-bind="lang['phone']"></h2>
+                    <p ng-bind="lang['addressLine'][0]"></p>
+                    <p ng-bind="lang['addressLine'][1]"></p>
+                    <p ng-bind="lang['addressLine'][2]"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="margin: 0; padding: 0">
+            <iframe style="width: 100%;" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBfibpI75A9RpR-wAWIkMfu8CKYNxZDLaI&q=Agmashenebeli+ave.154" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row" style="padding: 10px 0">
+                <div class="col-sm-4">
+                    <div class="footer-image-content">
+                        <img src="images/logo-delegations.jpg" alt="EU_logo" height="40" style="margin-right: 10px;">
+                        <div>
+                            <span ng-bind="lang['eustr1']"></span><br><span ng-bind="lang['eustr2']"></span>
+                        </div>
+                    </div>
+                    <p ng-bind="lang['eubigstr']">The contents of this website are the sole responsibility of B&S Europe and its consortium partners and can in no way be taken to reflect the views of the European Union.</p>
+                </div>
+                <div class="col-sm-4" style="text-align: center;">
+                    <p ng-bind="lang['Contact']"></p>
+                    <p ng-bind="lang['addressLine'][0]"></p>
+                    <p ng-bind="lang['addressLine'][1]"></p>
+                    <p ng-bind="lang['addressLine'][2]"></p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="footer-image-content">
+                        <img src="images/bs_logo.png" alt="B&S_logo" height="40" style="margin-right: 10px;">
+                        <div>
+                            <span ng-bind="lang['cprght1']"></span><br><span ng-bind="lang['cprght2']"></span>
+                        </div>
+                    </div>
+                    <!-- <p>Business & Strategies in Europe brings on board its consortium partners NI-CO – Northern Ireland Cooperation Overseas Ltd. and CSD – Center for the Study of Democracy.</p> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="toTop"><span class="glyphicon glyphicon-menu-up"></span></div>
+
+
+
+    <script src="scripts/lib/jquery-1.9.1.min.js"></script>
+    <script src="scripts/lib/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="https://rawgit.com/hammerjs/hammer.js/v2.0.8/hammer.min.js"></script>
+    <script src="scripts/lib/bootstrap.min.js"></script>
+    <script src="scripts/lib/ng-image-gallery.min.js"></script>
+    <script src="scripts/app/main.js"></script>
+</body>
+
+</html>
