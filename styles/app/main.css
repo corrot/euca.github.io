@@ -362,3 +362,10 @@ h1 {
 .coverage-link:hover {
     text-decoration: none;
 }
+
+
+#flag{
+    width: 33px;
+    height: auto;
+    margin-left: 5px;
+}
