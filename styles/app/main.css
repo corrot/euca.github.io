@@ -342,7 +342,7 @@ h1 {
 .langs {
     position: absolute;
     right: -35px;
-    top: 13px;
+    top: 15px;
     color: #479aff;
     cursor: pointer;
     font-weight: bold;
@@ -383,4 +383,13 @@ h1 {
     width: 33px;
     height: auto;
     margin-left: 5px;
+}
+.flagImage{
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.footer .container-fluid .row:nth-child(3){
+    background-color: red;    
 }
