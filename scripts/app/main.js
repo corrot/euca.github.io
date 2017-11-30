@@ -189,19 +189,23 @@ myApp.controller('myCtrl', [
 
         $scope.flags = [{ id: 0, url: 'GE', title: 'EN' }, { id: 1, url: 'EN', title: 'GE' }]
         $scope.lang = langs['EN'];
+        $scope.flagImgUrl = 'images/ge.png';
         $scope.activeLang = $scope.flags[0];
         $scope.changeLanguage = function(o) {
             // $scope.activeLang = $scope.activeLang == o || !$scope.activeLang ? $scope.flags[1] : $scope.flags[0];
             if (o == $scope.flags[0]) {
                 $scope.activeLang = $scope.flags[1];
+                $scope.flagImgUrl = 'images/en.png';
             }
             if (o == $scope.flags[1]) {
                 $scope.activeLang = $scope.flags[0];
+                $scope.flagImgUrl = 'images/ge.png';
             }
             $scope.lang = langs[$scope.activeLang.title];
         }
     }
 ]);
+
 
 $('#nav').on('affix.bs.affix', function() {
     if (!$(window).scrollTop()) return false;
