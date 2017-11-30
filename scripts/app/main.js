@@ -156,9 +156,9 @@ var mainDescription = {
     'GE': 'ლორემ იპსუმ ბატ საჩუქრებისათვის ულუფა ალპინიზმმა მოჰკლას დაგვეტოვებინა ქვევიდან გუნდისა უცნაურობა ჩითახოვის გამცემს. ვფიცავ უნგრულიც ატირებულიყოს გიხდება უცნაურობა გერასიმოვი დასრულებამდე ჯაველებმა დაეშვათ. ასაქმებს ვფიცავ მოისმის მეჩვიდმეტე გიხდება ბორნად მოქალაქედ. უგედ ეკლესიამდე ჩხავილით გაერთიანებაზე ჰნანობდა მეჩვიდმეტე უნგრულიც დარდიმანდობით გვარეულობის ვიშოვნი. მოხუცებულთაგან ასაქმებს უცნაურობა ბორნად მამყოფე მოგვაბეზროს მოქალაქედ. დალოცვილს ჯაველებმა გიხდება უცნაურობა საწერკალამი დარდიმანდობით უგედ. გარიგდა ვნერვიულობ მოისმის, ბავშვებისათვის მეჩვიდმეტე მოვლენად გგაგაუბედურე, გავაანალიზოთო ათასნაირად სკივრი გაერთიანებაზე. მამყოფე აღიმაღლა თელავში, ჯაველებმა სარქისიანცი, ქა ბოროვჩიკზეც მქენჯნის ულუფა გაუგრძელდათ სიმულაციას ბავშვებისათვის დარდიმანდობით უხმაუროდ. მეთოდურია რედაქტორები გაუგრძელდათ გუნდისა გამოეთხოვა ჩემზედაო ბავშვებისათვის, უგედ დალოცვილს ქვევიდან მქენჯნის. პრეზიდენტობას დაარღვიოს უცნაურობა, გამოეთხოვა აღიმაღლა წყეულიმც მიწოდა რედაქტორები უხმაუროდ მოგიხმარებია.'
 }
 
-var myApp = angular.module('myApp', ['thatisuday.ng-image-gallery']);
+var app = angular.module('app', ['thatisuday.ng-image-gallery', 'ngRoute']);
 
-myApp.controller('myCtrl', [
+app.controller('myCtrl', [
     '$scope',
     function($scope, $timeout, $interval) {
         $scope.langs = langs;
@@ -202,7 +202,36 @@ myApp.controller('myCtrl', [
         }
     }
 ]);
-
+app.config(function($routeProvider) {
+    $routeProvider
+        .when('/', {
+            controller: 'HomeController',
+            templateUrl: 'views/home.html'
+        })
+        .when('/news/:id', {
+            controller: 'NewsController',
+            templateUrl: 'views/news.html'
+        })
+        .when('/test', {
+            controller: 'HomeController',
+            templateUrl: 'views/test.html'
+        })
+        // .when('/singles/:id', {
+        //     controller: 'SinglesController',
+        //     templateUrl: 'views/singles.html'
+        // })
+        // .when('/essay/:id', {
+        //     controller: 'EssayController',
+        //     templateUrl: 'views/essay.html'
+        // })
+        // .when('/about', {
+        //     controller: 'HomeController',
+        //     templateUrl: 'views/about.html'
+        // })
+        .otherwise({
+            redirectTo: '/'
+        });
+});
 $('#nav').on('affix.bs.affix', function() {
     if (!$(window).scrollTop()) return false;
 });

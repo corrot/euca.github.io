@@ -12,8 +12,8 @@
     <link href="styles/app/main.css" rel="stylesheet" />
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190">
-
+<body ng-app="app" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190">
+    <div ng-include="'views/test.html'"></div>
     <div id="section1" class="container-fluid heading-container">
         <div class="container top">
             <img class="eu-logo" src="images/main-logo.png" alt="logo" />
@@ -83,221 +83,8 @@
             </div>
         </div>
     </nav>
-
     <div class="body-content" id="content">
-        <div id="section21" class="container-fluid section">
-            <div class="container">
-                <br>
-                <center>
-                    <h1><span ng-bind="lang['ProjectTitle']"></span></h1>
-                </center>
-                <br>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                            </ol> -->
-
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="images/sample.jpg" alt="Los Angeles" style="width:100%;">
-                                </div>
-
-                                <div class="item">
-                                    <img src="images/sample.jpg" alt="Chicago" style="width:100%;">
-                                </div>
-
-                                <div class="item">
-                                    <img src="images/sample.jpg" alt="New york" style="width:100%;">
-                                </div>
-                            </div>
-
-                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <br class="visible-xs" />
-                        <!-- <h2 style="margin-top:0">Short description of the project</h2> -->
-                        <!--<p style="text-align: justify" ng-bind="mainDescription[activeLang.title]">
-                        </p>-->
-						
-						<span ng-if="activeLang.title=='EN'">
-						<p><strong>“Support to the Georgian Competition Agency”</strong> is a two-year project funded by the European Union. </p>
-<p>With the <strong>overall objective</strong> to enhance the law enforcement capacity and professional skills of the Competition Agency of Georgia, the project aims to support the institutional capacity building, to improve the legal framework and to consolidate effective functioning of the Agency by spreading awareness about its crucial role.</p>
-<p>The project’s results will contribute to a favourable business climate suitable to stimulate trade, to attract foreign investments, to growth of competitive forces in the market and therefore to overall fostering of economic development of Georgia in line with the DCFTA provisions and the EU best practices.</p>
-<p>The EU experts - with an important presence of senior officials working for the Competition Council of the Republic of Lithuania, which is a member of the project implementing Consortium led by B&S Europe - work with local experts to support the Competition Agency of Georgia and other stakeholders. </p>
-<p>The Project’s three main components contribute to: </p>
-<ul>
-<li>Strengthening the efficiency of legal, economic and technical capacities of the Competition Agency to implement and enforce the competition policy, including with regard to enterprises enjoying special and exclusive rights, state enterprises and state aid rules;</li>
-
-<li>Improving the cooperation between the Competition Agency and Sector Regulators; </li>
-
-<li>Promoting a competition culture within the Georgian society. </li>
-</ul>
-						
-						</span>
-						<span ng-if="activeLang.title=='GE'">
-						<p><strong>“საქართველოს კონკურენციის სააგენტოს მხარდაჭერა“</strong> არის ევროკავშირის მიერ დაფინანსებული ორ წლიანი პროექტი, რომლის  <strong>ძირითადი მიზანი</strong> საქართველოს კონკურენციის სააგენტოს მიერ კონკურენციის შესახებ კანონის აღსრულების ეფექტურობის გაზრდა და სააგენტოს თანამშრომელთა კვალიფიკაციის ამაღლებაა. პროექტი ხელს უწყობს ინსტიტუციურ განვითარებას,  არსებული კანონმდებლობის დახვეწას, კონკურენციის სააგენტოს საქმიანობის პროდუქტიულობის ზრდას და სააგენტოს როლის შესახებ ცნობიერების ამაღლებას. </p>
-<p>პროექტის შედეგები მნიშვნელოვანი იქნება ბიზნეს გარემოს გაუმჯობესებისა და ვაჭრობის ზრდისთვის, ასევე უცხოური ინვესტიციების მოზიდვისა და ბაზარზე კონკურენციის გაძლიერებისთვის. შესაბამისად, პროექტი ხელს შეუწყობს ეკონომიკურ განვითარებას ევროკავშირის საუკეთესო გამოცდილების და DCFTA–ს დებულებების თანახმად.</p>
-<p>პროექტს ახორციელებს კონსორციუმი, რომელსაც ხელმძღვანელობს “Business and Strategies Europe.” პროექტის ფარგლებში ევროკავშირის ექსპერტები, მათ შორის ლიტვის რესპუბლიკის კონკურენციის საბჭოს (რომელიც ამავდროულად არის კონსორციუმის წევრი) მაღალი რანგის წარმომადგენლები, ქართველ კოლეგებთან ერთად ეხმარებიან, როგორც საქართველოს კონკურენციის სააგენტოს, ასევე სხვა დაინტერესებულ უწყებებს.  </p>
-<p>კონკრეტული ამოცანების მიხედვით პროექტი სამ ძირითად კომპონენტად იყოფა:</p>
-<ul>
-<li>კონკურენციის სააგენტოს სამართლებრივი, ეკონომიკური და ტექნიკური შესაძლებლობების გაუმჯობესება კონკურენციის პოლიტიკის სათანადო აღსრულებისთვის სხვადასხვა მიმართულებით, მათ შორის, სახელმწიფო საწარმოებთან, სპეციალური ან ექსკლუზიური უფლებების მქონე საწარმოებთან და სახელმწიფო დახმარებასთან დაკავშირებით;</li>
-
-<li>თანამშრომლობის გაძლიერება კონკურენციის სააგენტოსა და დარგობრივ მარეგულირებლებს შორის;</li>
-
-<li>საზოგადოებაში კონკურენციის კულტურის დახვეწა.
-</li>
-						</ul>
-						</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="section22" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['OurTeam']"></span></h1>
-                <br/>
-                <div class="row" style="margin-top: 40px">
-                    <div ng-repeat="p in team" class="col-sm-3">
-                        <div class="card">
-                            <div class="card-image-wrapper sm">
-                                <div class="card-image" style="background-image: url({{p.image}})"></div>
-                            </div>
-                            <div class="card-contents">
-                                <h5 class="card-date" ng-bind="p.title[activeLang.title]"></h5>
-                                <h4 class="card-title" ng-bind="p.description[activeLang.title]"></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div>
-            <div class="container">
-                <h1><span ng-bind="lang['News']"></span></h1>
-            </div>
-        </div> -->
-        <div id="section31" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['Newsletter']"></span></h1>
-                <div class="text-container">
-                    <div><strong><span ng-bind="lang['DownloadTheNewsLetter']" class="ng-binding">Download the Newsletter</span></strong></div>
-                    <div class="row" style="margin-top: 40px">
-                        <div ng-repeat="p in publications" class="col-sm-4" ng-if="$index < publicationLimit">
-                            <div class="card">
-                                <div class="card-image-wrapper">
-                                    <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
-                                    <div class="card-image" style="background-image: url({{p.image}})"></div>
-                                </div>
-                                <div class="card-contents">
-                                    <h5 class="card-date" ng-bind="p.date"></h5>
-                                    <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <center>
-                    <div class="btn btn-default" ng-click="loadPublications()" ng-disabled="publications.length <= publicationLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
-                </center>
-            </div>
-        </div>
-        <div id="section32" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['Multimedia']"></span></h1>
-                <div class="text-container">
-                    <div class="row" style="margin-top: 40px">
-                        <div ng-repeat="p in multimedia" class="col-sm-3" ng-if="$index < multimediaLimit" ng-click="methods.open($index)">
-                            <div class="card">
-                                <div class="card-image-wrapper sm">
-                                    <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div>
-                                    <div class="card-image" style="background-image: url({{p.url}})"></div>
-                                </div>
-                                <div class="card-contents">
-                                    <h5 class="card-date" ng-bind="p.desc[activeLang.title]"></h5>
-                                    <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <center>
-                        <div class="btn btn-default" ng-click="openGallery()">View Gallery...<span class=""></span></div>
-                    </center>
-                    <ng-image-gallery images="multimedia" methods="methods" conf="conf" thumbnails="false" thumb-size="thumbSize" inline="inline" bubbles="false" bubble-size="bubbleSize" img-bubbles="imgBubbles" bg-close="bgClose" piracy="true" on-open="opened();" on-close="closed();"
-                        on-delete="delete(img, cb)" bg-close="false">
-                    </ng-image-gallery>
-                </div>
-            </div>
-        </div>
-        <div id="section33" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['NewsCoverage']"></span></h1>
-                <br/>
-                <!-- <div ng-repeat="c in coverage"><a href="{{c.link}}"><span ng-bind="c.title"></span></a></div> -->
-                <div class="row" style="margin: 0">
-                    <a ng-repeat="p in coverage" class="col-sm-3 coverage-link" href="{{p.link}}">
-                        <div class="card">
-                            <div class="card-image-wrapper sm">
-                                <!-- <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div> -->
-                                <div class="card-image" style="background-image: url(images/doc.png)"></div>
-                            </div>
-                            <div class="card-contents">
-                                <h5 class="card-date" ng-bind="p.date"></h5>
-                                <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <center>
-                    <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="coverage.length <= coverageLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
-                </center>
-            </div>
-        </div>
-        <!-- <div id="section3" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['ExploreTheResults']"></span></h1>
-                <div class="text-container">
-                    <div><strong>PLACE FOR A TEXT</strong></div>
-                </div>
-            </div>
-        </div> -->
-        <div id="section4" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['Contact']"></span></h1>
-                <div class="col-sm-4 text-center">
-                    <h2 class="light-heading" ng-bind="lang['address']"></h2>
-                    <p ng-bind="lang['addressLine'][0]"></p>
-                    <p ng-bind="lang['addressLine'][1]"></p>
-                    <p ng-bind="lang['addressLine'][2]"></p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h2 class="light-heading" ng-bind="lang['email']"></h2>
-                    <p ng-bind="lang['addressLine'][0]"></p>
-                    <p ng-bind="lang['addressLine'][1]"></p>
-                    <p ng-bind="lang['addressLine'][2]"></p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h2 class="light-heading" ng-bind="lang['phone']"></h2>
-                    <p ng-bind="lang['addressLine'][0]"></p>
-                    <p ng-bind="lang['addressLine'][1]"></p>
-                    <p ng-bind="lang['addressLine'][2]"></p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" style="margin: 0; padding: 0">
-            <iframe style="width: 100%;" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBfibpI75A9RpR-wAWIkMfu8CKYNxZDLaI&q=Agmashenebeli+ave.154" allowfullscreen></iframe>
-        </div>
+        <div class="ng-view"></div>
     </div>
 
     <div class="footer">
@@ -334,15 +121,25 @@
     </div>
     <div class="toTop"><span class="glyphicon glyphicon-menu-up"></span></div>
 
-
-
     <script src="scripts/lib/jquery-1.9.1.min.js"></script>
     <script src="scripts/lib/angular.min.js"></script>
+    <script src="scripts/lib/angular-route.js"></script>
+    <script src="scripts/lib/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
     <script src="https://rawgit.com/hammerjs/hammer.js/v2.0.8/hammer.min.js"></script>
     <script src="scripts/lib/bootstrap.min.js"></script>
     <script src="scripts/lib/ng-image-gallery.min.js"></script>
+
+    <!-- Modules -->
     <script src="scripts/app/main.js"></script>
+
+    <!-- Controllers -->
+    <script src="scripts/controllers/HomeController.js"></script>
+    <script src="scripts/controllers/NewsController.js"></script>
+
+    <!-- Services -->
+    <script src="scripts/services/news.js"></script>
+
 </body>
 
 </html>
