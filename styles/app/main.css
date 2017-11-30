@@ -379,11 +379,14 @@ h1 {
     pointer-events: none;
 }
 
+<<<<<<< HEAD
 #flag{
     width: 33px;
     height: auto;
     margin-left: 5px;
 }
+=======
+>>>>>>> ofelia-1
 .flagImage{
     width: 30px;
     height: auto;
