@@ -85,6 +85,10 @@ body {
     background-color: #004996;
 }
 
+.dropdown-toggle{
+    cursor: pointer;
+}
+
 .relative{
     position: relative;
 }
@@ -390,8 +394,4 @@ h1 {
     width: 30px;
     height: auto;
     margin-left: 5px;
-}
-
-.footer .container-fluid .row:nth-child(3){
-    background-color: red;    
 }
