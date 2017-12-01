@@ -260,7 +260,9 @@ if ($('.toTop').length) {
 }
 
 
-//smooth dropdown
+// ------------------------------------- //
+// ----------- smooth dropdown --------- //
+// ------------------------------------- //
 
 $('.dropdown').on('show.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
@@ -268,4 +270,16 @@ $('.dropdown').on('show.bs.dropdown', function() {
 
 $('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
+// ------------------------------------- //
+// ------- smooth scroll on click ------ //
+// ------------------------------------- //
+
+$('.dropdown-menu a').click(function(e){
+    e.stopPropagation();
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
 });
