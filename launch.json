@@ -1,7 +1,6 @@
 {
     "version": "0.1.0",
-    "configurations": [
-        {
+    "configurations": [{
             "name": "Launch localhost",
             "type": "chrome",
             "request": "launch",
@@ -14,6 +13,6 @@
             "request": "launch",
             "sourceMaps": false,
             "file": "${workspaceRoot}/index.html"
-        },
+        }
     ]
 }

@@ -12,8 +12,7 @@
     <link href="styles/app/main.css" rel="stylesheet" />
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190">
-
+<body ng-app="app" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190">
     <div id="section1" class="container-fluid heading-container">
         <div class="container top">
             <img class="eu-logo" src="images/main-logo.png" alt="logo" />
@@ -45,22 +44,22 @@
             <div>
                 <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html"><span ng-bind="lang['Home']"></span></a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
+                        <li class="active"><a href="#" target="_self"><span ng-bind="lang['Home']"></span></a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#section21"><span ng-bind="lang['AboutProject']"></span></a></li>
-                                <li><a href="team.html"><span ng-bind="lang['OurTeam']"></span></a></li>
+                                <li><a href="#about-us" target="_self"><span ng-bind="lang['AboutProject']"></span></a></li>
+                                <li><a href="#our-team" target="_self"><span ng-bind="lang['OurTeam']"></span></a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#section31"><span ng-bind="lang['Newsletter']"></span></a></li>
-                                <li><a href="#section32"><span ng-bind="lang['Multimedia']"></span></a></li>
-                                <li><a href="#section33"><span ng-bind="lang['NewsCoverage']"></span></a></li>
+                                <li><a href="#news" target="_self"><span ng-bind="lang['Newsletter']"></span></a></li>
+                                <li><a href="#multimedia" target="_self"><span ng-bind="lang['Multimedia']"></span></a></li>
+                                <li><a href="#newsletter" target="_self"><span ng-bind="lang['NewsCoverage']"></span></a></li>
                             </ul>
                         </li>
                         <!-- <li><a href="#section3"><span ng-bind="lang['ExploreTheResults']"></span></a></li> -->
-                        <li class=""><a href="#section4"><span ng-bind="lang['Contact']"></span></a></li>
+                        <li class=""><a href="#contact" target="_self"><span ng-bind="lang['Contact']"></span></a></li>
                         <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['WhoWeAre']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#section41"><span ng-bind="lang['OurTeam']"></span></a></li>
@@ -77,7 +76,7 @@
                         </div>
                         <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
                             <span ng-bind="activeLang.url"></span>
-                            <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>                        
+                            <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
                             <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
                         </div>
                     </div>
@@ -85,9 +84,8 @@
             </div>
         </div>
     </nav>
-
     <div class="body-content" id="content">
-        <div id="section21" class="container-fluid section">
+        <<<<<<< HEAD <div id="section21" class="container-fluid section">
             <div class="container">
                 <br>
                 <center>
@@ -165,89 +163,89 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <div>
+    </div>
+    <!-- <div>
             <div class="container">
                 <h1><span ng-bind="lang['News']"></span></h1>
             </div>
         </div> -->
-        <div id="section31" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['Newsletter']"></span></h1>
-                <div class="text-container">
-                    <div><strong><span ng-bind="lang['DownloadTheNewsLetter']" class="ng-binding">Download the Newsletter</span></strong></div>
-                    <div class="row" style="margin-top: 40px">
-                        <div ng-repeat="p in publications" class="col-sm-4" ng-if="$index < publicationLimit">
-                            <div class="card">
-                                <div class="card-image-wrapper">
-                                    <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
-                                    <div class="card-image" style="background-image: url({{p.image}})"></div>
-                                </div>
-                                <div class="card-contents">
-                                    <h5 class="card-date" ng-bind="p.date"></h5>
-                                    <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <center>
-                    <div class="btn btn-default" ng-click="loadPublications()" ng-disabled="publications.length <= publicationLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
-                </center>
-            </div>
-        </div>
-        <div id="section32" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['Multimedia']"></span></h1>
-                <div class="text-container">
-                    <div class="row" style="margin-top: 40px">
-                        <div ng-repeat="p in multimedia" class="col-sm-3" ng-if="$index < multimediaLimit" ng-click="methods.open($index)">
-                            <div class="card">
-                                <div class="card-image-wrapper sm">
-                                    <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div>
-                                    <div class="card-image" style="background-image: url({{p.url}})"></div>
-                                </div>
-                                <div class="card-contents">
-                                    <h5 class="card-date" ng-bind="p.desc[activeLang.title]"></h5>
-                                    <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <center>
-                        <div class="btn btn-default" ng-click="openGallery()">View Gallery...<span class=""></span></div>
-                    </center>
-                    <ng-image-gallery images="multimedia" methods="methods" conf="conf" thumbnails="false" thumb-size="thumbSize" inline="inline" bubbles="false" bubble-size="bubbleSize" img-bubbles="imgBubbles" bg-close="bgClose" piracy="true" on-open="opened();" on-close="closed();"
-                        on-delete="delete(img, cb)" bg-close="false">
-                    </ng-image-gallery>
-                </div>
-            </div>
-        </div>
-        <div id="section33" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['NewsCoverage']"></span></h1>
-                <br/>
-                <!-- <div ng-repeat="c in coverage"><a href="{{c.link}}"><span ng-bind="c.title"></span></a></div> -->
-                <div class="row" style="margin: 0">
-                    <a ng-repeat="p in coverage" class="col-sm-3 coverage-link" href="{{p.link}}">
+    <div id="section31" class="section">
+        <div class="container">
+            <h1><span ng-bind="lang['Newsletter']"></span></h1>
+            <div class="text-container">
+                <div><strong><span ng-bind="lang['DownloadTheNewsLetter']" class="ng-binding">Download the Newsletter</span></strong></div>
+                <div class="row" style="margin-top: 40px">
+                    <div ng-repeat="p in publications" class="col-sm-4" ng-if="$index < publicationLimit">
                         <div class="card">
-                            <div class="card-image-wrapper sm">
-                                <!-- <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div> -->
-                                <div class="card-image" style="background-image: url(images/doc.png)"></div>
+                            <div class="card-image-wrapper">
+                                <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
+                                <div class="card-image" style="background-image: url({{p.image}})"></div>
                             </div>
                             <div class="card-contents">
                                 <h5 class="card-date" ng-bind="p.date"></h5>
                                 <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="btn btn-default" ng-click="loadPublications()" ng-disabled="publications.length <= publicationLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
+            </center>
+        </div>
+    </div>
+    <div id="section32" class="section">
+        <div class="container">
+            <h1><span ng-bind="lang['Multimedia']"></span></h1>
+            <div class="text-container">
+                <div class="row" style="margin-top: 40px">
+                    <div ng-repeat="p in multimedia" class="col-sm-3" ng-if="$index < multimediaLimit" ng-click="methods.open($index)">
+                        <div class="card">
+                            <div class="card-image-wrapper sm">
+                                <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div>
+                                <div class="card-image" style="background-image: url({{p.url}})"></div>
+                            </div>
+                            <div class="card-contents">
+                                <h5 class="card-date" ng-bind="p.desc[activeLang.title]"></h5>
+                                <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <center>
-                    <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="coverage.length <= coverageLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
+                    <div class="btn btn-default" ng-click="openGallery()">View Gallery...<span class=""></span></div>
                 </center>
+                <ng-image-gallery images="multimedia" methods="methods" conf="conf" thumbnails="false" thumb-size="thumbSize" inline="inline" bubbles="false" bubble-size="bubbleSize" img-bubbles="imgBubbles" bg-close="bgClose" piracy="true" on-open="opened();" on-close="closed();"
+                    on-delete="delete(img, cb)" bg-close="false">
+                </ng-image-gallery>
             </div>
         </div>
-        <!-- <div id="section3" class="section">
+    </div>
+    <div id="section33" class="section">
+        <div class="container">
+            <h1><span ng-bind="lang['NewsCoverage']"></span></h1>
+            <br/>
+            <!-- <div ng-repeat="c in coverage"><a href="{{c.link}}"><span ng-bind="c.title"></span></a></div> -->
+            <div class="row" style="margin: 0">
+                <a ng-repeat="p in coverage" class="col-sm-3 coverage-link" href="{{p.link}}">
+                    <div class="card">
+                        <div class="card-image-wrapper sm">
+                            <!-- <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div> -->
+                            <div class="card-image" style="background-image: url(images/doc.png)"></div>
+                        </div>
+                        <div class="card-contents">
+                            <h5 class="card-date" ng-bind="p.date"></h5>
+                            <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <center>
+                <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="coverage.length <= coverageLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
+            </center>
+        </div>
+    </div>
+    <!-- <div id="section3" class="section">
             <div class="container">
                 <h1><span ng-bind="lang['ExploreTheResults']"></span></h1>
                 <div class="text-container">
@@ -255,32 +253,35 @@
                 </div>
             </div>
         </div> -->
-        <div id="section4" class="section">
-            <div class="container">
-                <h1><span ng-bind="lang['Contact']"></span></h1>
-                <div class="col-sm-4 text-center">
-                    <h2 class="light-heading" ng-bind="lang['address']"></h2>
-                    <p ng-bind="lang['addressLine'][0]"></p>
-                    <p ng-bind="lang['addressLine'][1]"></p>
-                    <p ng-bind="lang['addressLine'][2]"></p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h2 class="light-heading" ng-bind="lang['email']"></h2>
-                    <p ng-bind="lang['addressLine'][0]"></p>
-                    <p ng-bind="lang['addressLine'][1]"></p>
-                    <p ng-bind="lang['addressLine'][2]"></p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <h2 class="light-heading" ng-bind="lang['phone']"></h2>
-                    <p ng-bind="lang['addressLine'][0]"></p>
-                    <p ng-bind="lang['addressLine'][1]"></p>
-                    <p ng-bind="lang['addressLine'][2]"></p>
-                </div>
+    <div id="section4" class="section">
+        <div class="container">
+            <h1><span ng-bind="lang['Contact']"></span></h1>
+            <div class="col-sm-4 text-center">
+                <h2 class="light-heading" ng-bind="lang['address']"></h2>
+                <p ng-bind="lang['addressLine'][0]"></p>
+                <p ng-bind="lang['addressLine'][1]"></p>
+                <p ng-bind="lang['addressLine'][2]"></p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h2 class="light-heading" ng-bind="lang['email']"></h2>
+                <p ng-bind="lang['addressLine'][0]"></p>
+                <p ng-bind="lang['addressLine'][1]"></p>
+                <p ng-bind="lang['addressLine'][2]"></p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h2 class="light-heading" ng-bind="lang['phone']"></h2>
+                <p ng-bind="lang['addressLine'][0]"></p>
+                <p ng-bind="lang['addressLine'][1]"></p>
+                <p ng-bind="lang['addressLine'][2]"></p>
             </div>
         </div>
-        <div class="container-fluid" style="margin: 0; padding: 0">
-            <iframe style="width: 100%;" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBfibpI75A9RpR-wAWIkMfu8CKYNxZDLaI&q=Agmashenebeli+ave.154" allowfullscreen></iframe>
-        </div>
+    </div>
+    <div class="container-fluid" style="margin: 0; padding: 0">
+        <iframe style="width: 100%;" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBfibpI75A9RpR-wAWIkMfu8CKYNxZDLaI&q=Agmashenebeli+ave.154" allowfullscreen></iframe>
+    </div>
+    =======
+    <div class="ng-view"></div>
+    >>>>>>> koro-1
     </div>
 
     <div class="footer">
@@ -317,15 +318,25 @@
     </div>
     <div class="toTop"><span class="glyphicon glyphicon-menu-up"></span></div>
 
-
-
     <script src="scripts/lib/jquery-1.9.1.min.js"></script>
     <script src="scripts/lib/angular.min.js"></script>
+    <script src="scripts/lib/angular-route.js"></script>
+    <script src="scripts/lib/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
     <script src="https://rawgit.com/hammerjs/hammer.js/v2.0.8/hammer.min.js"></script>
     <script src="scripts/lib/bootstrap.min.js"></script>
     <script src="scripts/lib/ng-image-gallery.min.js"></script>
+
+    <!-- Modules -->
     <script src="scripts/app/main.js"></script>
+
+    <!-- Controllers -->
+    <script src="scripts/controllers/HomeController.js"></script>
+    <script src="scripts/controllers/NewsController.js"></script>
+
+    <!-- Services -->
+    <script src="scripts/services/news.js"></script>
+
 </body>
 
 </html>

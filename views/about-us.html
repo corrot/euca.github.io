@@ -1,0 +1,79 @@
+<div id="section21" class="container-fluid section">
+    <div class="container">
+        <br>
+        <center>
+            <h1><span ng-bind="lang['ProjectTitle']"></span></h1>
+        </center>
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol> -->
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/sample.jpg" alt="Los Angeles" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/sample.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/sample.jpg" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <br class="visible-xs" />
+                <!-- <h2 style="margin-top:0">Short description of the project</h2> -->
+                <!--<p style="text-align: justify" ng-bind="mainDescription[activeLang.title]">
+                        </p>-->
+
+                <span ng-if="activeLang.title=='EN'">
+                        <p><strong>“Support to the Georgian Competition Agency”</strong> is a two-year project funded by the European Union. </p>
+    <p>With the <strong>overall objective</strong> to enhance the law enforcement capacity and professional skills of the Competition Agency of Georgia, the project aims to support the institutional capacity building, to improve the legal framework and to consolidate effective functioning of the Agency by spreading awareness about its crucial role.</p>
+    <p>The project’s results will contribute to a favourable business climate suitable to stimulate trade, to attract foreign investments, to growth of competitive forces in the market and therefore to overall fostering of economic development of Georgia in line with the DCFTA provisions and the EU best practices.</p>
+    <p>The EU experts - with an important presence of senior officials working for the Competition Council of the Republic of Lithuania, which is a member of the project implementing Consortium led by B&S Europe - work with local experts to support the Competition Agency of Georgia and other stakeholders. </p>
+    <p>The Project’s three main components contribute to: </p>
+    <ul>
+    <li>Strengthening the efficiency of legal, economic and technical capacities of the Competition Agency to implement and enforce the competition policy, including with regard to enterprises enjoying special and exclusive rights, state enterprises and state aid rules;</li>
+    
+    <li>Improving the cooperation between the Competition Agency and Sector Regulators; </li>
+    
+    <li>Promoting a competition culture within the Georgian society. </li>
+    </ul>
+                        
+                        </span>
+                <span ng-if="activeLang.title=='GE'">
+                        <p><strong>“საქართველოს კონკურენციის სააგენტოს მხარდაჭერა“</strong> არის ევროკავშირის მიერ დაფინანსებული ორ წლიანი პროექტი, რომლის  <strong>ძირითადი მიზანი</strong> საქართველოს კონკურენციის სააგენტოს მიერ კონკურენციის შესახებ კანონის აღსრულების ეფექტურობის გაზრდა და სააგენტოს თანამშრომელთა კვალიფიკაციის ამაღლებაა. პროექტი ხელს უწყობს ინსტიტუციურ განვითარებას,  არსებული კანონმდებლობის დახვეწას, კონკურენციის სააგენტოს საქმიანობის პროდუქტიულობის ზრდას და სააგენტოს როლის შესახებ ცნობიერების ამაღლებას. </p>
+    <p>პროექტის შედეგები მნიშვნელოვანი იქნება ბიზნეს გარემოს გაუმჯობესებისა და ვაჭრობის ზრდისთვის, ასევე უცხოური ინვესტიციების მოზიდვისა და ბაზარზე კონკურენციის გაძლიერებისთვის. შესაბამისად, პროექტი ხელს შეუწყობს ეკონომიკურ განვითარებას ევროკავშირის საუკეთესო გამოცდილების და DCFTA–ს დებულებების თანახმად.</p>
+    <p>პროექტს ახორციელებს კონსორციუმი, რომელსაც ხელმძღვანელობს “Business and Strategies Europe.” პროექტის ფარგლებში ევროკავშირის ექსპერტები, მათ შორის ლიტვის რესპუბლიკის კონკურენციის საბჭოს (რომელიც ამავდროულად არის კონსორციუმის წევრი) მაღალი რანგის წარმომადგენლები, ქართველ კოლეგებთან ერთად ეხმარებიან, როგორც საქართველოს კონკურენციის სააგენტოს, ასევე სხვა დაინტერესებულ უწყებებს.  </p>
+    <p>კონკრეტული ამოცანების მიხედვით პროექტი სამ ძირითად კომპონენტად იყოფა:</p>
+    <ul>
+    <li>კონკურენციის სააგენტოს სამართლებრივი, ეკონომიკური და ტექნიკური შესაძლებლობების გაუმჯობესება კონკურენციის პოლიტიკის სათანადო აღსრულებისთვის სხვადასხვა მიმართულებით, მათ შორის, სახელმწიფო საწარმოებთან, სპეციალური ან ექსკლუზიური უფლებების მქონე საწარმოებთან და სახელმწიფო დახმარებასთან დაკავშირებით;</li>
+    
+    <li>თანამშრომლობის გაძლიერება კონკურენციის სააგენტოსა და დარგობრივ მარეგულირებლებს შორის;</li>
+    
+    <li>საზოგადოებაში კონკურენციის კულტურის დახვეწა.
+    </li>
+                        </ul>
+                        </span>
+            </div>
+        </div>
+    </div>
+</div>

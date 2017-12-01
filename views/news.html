@@ -1,0 +1,37 @@
+<div id="section31" class="section" ng-controller="HomeController">
+    <div class="container">
+        <h1><span ng-bind="lang['Newsletter']"></span></h1>
+        <div class="text-container">
+            <div><strong><span ng-bind="lang['DownloadTheNewsLetter']" class="ng-binding">Download the Newsletter</span></strong></div>
+            <div class="row" style="margin-top: 40px">
+                <!-- <div ng-repeat="p in publications" class="col-sm-4" ng-if="$index < publicationLimit">
+                            <div class="card">
+                                <div class="card-image-wrapper">
+                                    <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
+                                    <div class="card-image" style="background-image: url({{p.image}})"></div>
+                                </div>
+                                <div class="card-contents">
+                                    <h5 class="card-date" ng-bind="p.date"></h5>
+                                    <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
+                                </div>
+                            </div>
+                        </div> -->
+                <a href="#/news/{{n.id}}" ng-repeat="n in news" class="col-sm-4" ng-if="$index < publicationLimit">
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
+                            <div class="card-image" style="background-image: url({{n.image}})"></div>
+                        </div>
+                        <div class="card-contents">
+                            <h5 class="card-date" ng-bind="n.date"></h5>
+                            <h4 class="card-title" ng-bind="n.title[activeLang.title]"></h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <center>
+            <div class="btn btn-default" ng-click="loadPublications()" ng-disabled="publications.length <= publicationLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
+        </center>
+    </div>
+</div>

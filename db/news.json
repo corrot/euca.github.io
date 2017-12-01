@@ -1,0 +1,22 @@
+[{
+        "id": 0,
+        "link": "#",
+        "image": "http://adventurefittravel.com/images/ADVFBloggingTeam/BrianaBowley/bottom.jpg",
+        "date": "Nov 29, 2017",
+        "title": { "EN": "Competition policy", "GE": "კონკურენციის პოლიტიკა" }
+    },
+    {
+        "id": 1,
+        "link": "#",
+        "image": "http://st2.agora.md/news/big/din-momentul-aplicarii-dcfta--republica-moldova-a-exportat-in-ue-marfuri-in-valoare-de-peste-2-2-miliarde--usd-22065.jpg",
+        "date": "Nov 29, 2017",
+        "title": { "EN": "The Association Agreement", "GE": "ასოცირების შეთანხმება" }
+    },
+    {
+        "id": 2,
+        "link": "#",
+        "image": "https://www.medicaidannuity.com/wp-content/uploads/2016/04/Giving-Cash.jpg",
+        "date": "Nov 29, 2017",
+        "title": { "EN": "The DCFTA", "GE": "DCFTA" }
+    }
+]
