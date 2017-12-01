@@ -1,0 +1,27 @@
+<div id="section32" class="section">
+    <div class="container">
+        <h1><span ng-bind="lang['Multimedia']"></span></h1>
+        <div class="text-container">
+            <div class="row" style="margin-top: 40px">
+                <div ng-repeat="p in multimedia" class="col-sm-3" ng-if="$index < multimediaLimit" ng-click="methods.open($index)">
+                    <div class="card">
+                        <div class="card-image-wrapper sm">
+                            <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div>
+                            <div class="card-image" style="background-image: url({{p.url}})"></div>
+                        </div>
+                        <div class="card-contents">
+                            <h5 class="card-date" ng-bind="p.desc[activeLang.title]"></h5>
+                            <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="btn btn-default" ng-click="openGallery()">View Gallery...<span class=""></span></div>
+            </center>
+            <ng-image-gallery images="multimedia" methods="methods" conf="conf" thumbnails="false" thumb-size="thumbSize" inline="inline" bubbles="false" bubble-size="bubbleSize" img-bubbles="imgBubbles" bg-close="bgClose" piracy="true" on-open="opened();" on-close="closed();"
+                on-delete="delete(img, cb)" bg-close="false">
+            </ng-image-gallery>
+        </div>
+    </div>
+</div>

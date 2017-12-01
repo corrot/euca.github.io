@@ -13,7 +13,6 @@
 </head>
 
 <body ng-app="app" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190">
-    <div ng-include="'views/test.html'"></div>
     <div id="section1" class="container-fluid heading-container">
         <div class="container top">
             <img class="eu-logo" src="images/main-logo.png" alt="logo" />
@@ -44,22 +43,22 @@
             <div>
                 <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#section1"><span ng-bind="lang['Home']"></span></a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
+                        <li class="active"><a href="#" target="_self"><span ng-bind="lang['Home']"></span></a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#section21"><span ng-bind="lang['AboutProject']"></span></a></li>
-                                <li><a href="#section22"><span ng-bind="lang['OurTeam']"></span></a></li>
+                                <li><a href="#about-us" target="_self"><span ng-bind="lang['AboutProject']"></span></a></li>
+                                <li><a href="#our-team" target="_self"><span ng-bind="lang['OurTeam']"></span></a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#section31"><span ng-bind="lang['Newsletter']"></span></a></li>
-                                <li><a href="#section32"><span ng-bind="lang['Multimedia']"></span></a></li>
-                                <li><a href="#section33"><span ng-bind="lang['NewsCoverage']"></span></a></li>
+                                <li><a href="#news" target="_self"><span ng-bind="lang['Newsletter']"></span></a></li>
+                                <li><a href="#multimedia" target="_self"><span ng-bind="lang['Multimedia']"></span></a></li>
+                                <li><a href="#newsletter" target="_self"><span ng-bind="lang['NewsCoverage']"></span></a></li>
                             </ul>
                         </li>
                         <!-- <li><a href="#section3"><span ng-bind="lang['ExploreTheResults']"></span></a></li> -->
-                        <li class=""><a href="#section4"><span ng-bind="lang['Contact']"></span></a></li>
+                        <li class=""><a href="#contact" target="_self"><span ng-bind="lang['Contact']"></span></a></li>
                         <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['WhoWeAre']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#section41"><span ng-bind="lang['OurTeam']"></span></a></li>

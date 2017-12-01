@@ -1,0 +1,24 @@
+<div id="section33" class="section">
+    <div class="container">
+        <h1><span ng-bind="lang['NewsCoverage']"></span></h1>
+        <br/>
+        <!-- <div ng-repeat="c in coverage"><a href="{{c.link}}"><span ng-bind="c.title"></span></a></div> -->
+        <div class="row" style="margin: 0">
+            <a ng-repeat="p in coverage" class="col-sm-3 coverage-link" href="{{p.link}}">
+                <div class="card">
+                    <div class="card-image-wrapper sm">
+                        <!-- <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div> -->
+                        <div class="card-image" style="background-image: url(images/doc.png)"></div>
+                    </div>
+                    <div class="card-contents">
+                        <h5 class="card-date" ng-bind="p.date"></h5>
+                        <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <center>
+            <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="coverage.length <= coverageLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
+        </center>
+    </div>
+</div>

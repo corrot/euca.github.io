@@ -4,9 +4,9 @@ var langs = {
         'AboutUs': 'About Us',
         'AboutProject': 'About the project',
         'News': 'News',
-        'Newsletter': 'Newsletter',
+        'Newsletter': 'News',
         'Multimedia': 'Multimedia',
-        'NewsCoverage': 'News Coverage',
+        'NewsCoverage': 'Newsletter',
         'ExploreTheResults': 'Results',
         'OurTeam': 'Our Team',
         'Contact': 'Contact',
@@ -31,9 +31,9 @@ var langs = {
         'AboutUs': 'ჩვენს შესახებ',
         'AboutProject': 'პროექტის შესახებ',
         'News': 'სიახლეები',
-        'Newsletter': 'ინფორმაცია',
+        'Newsletter': 'სიახლეები',
         'Multimedia': 'მულტიმედია',
-        'NewsCoverage': 'პრესა',
+        'NewsCoverage': 'საინფორმაციო ბიულეტენი',
         'ExploreTheResults': 'შედეგები',
         'OurTeam': 'ჩვენი გუნდი',
         'Contact': 'კონტაქტი',
@@ -210,11 +210,7 @@ app.config(function($routeProvider) {
         })
         .when('/news/:id', {
             controller: 'NewsController',
-            templateUrl: 'views/news.html'
-        })
-        .when('/test', {
-            controller: 'HomeController',
-            templateUrl: 'views/test.html'
+            templateUrl: 'views/news-detail.html'
         })
         // .when('/singles/:id', {
         //     controller: 'SinglesController',

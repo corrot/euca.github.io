@@ -1,0 +1,19 @@
+<div id="section22" class="section">
+    <div class="container">
+        <h1><span ng-bind="lang['OurTeam']"></span></h1>
+        <br/>
+        <div class="row" style="margin-top: 40px">
+            <div ng-repeat="p in team" class="col-sm-3">
+                <div class="card">
+                    <div class="card-image-wrapper sm">
+                        <div class="card-image" style="background-image: url({{p.image}})"></div>
+                    </div>
+                    <div class="card-contents">
+                        <h5 class="card-date" ng-bind="p.title[activeLang.title]"></h5>
+                        <h4 class="card-title" ng-bind="p.description[activeLang.title]"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
