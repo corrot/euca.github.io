@@ -1,1 +1,14 @@
-<div ng-bind="news"></div> asdas asd asdasd
+<div class="container">
+    <div class="news-detail">
+        <div class="container image-container">
+            <img ng-src="{{news.image}}" alt="News image">
+            <h1 class="news-title" ng-bind="news.title[activeLang.title]"></h1>                
+        </div>
+        <p ng-bind="news.article[activeLang.title]"></p>
+        <div class="date">
+            <span ng-if="activeLang.title == 'EN'">Published on: </span>
+            <span ng-if="activeLang.title == 'GE'">გამოქვეყნებულია: </span>            
+            <span ng-bind="news.date"></span>
+        </div>
+    </div>
+</div>
