@@ -16,18 +16,20 @@
                                 </div>
                             </div>
                         </div> -->
-                <a href="#/news/{{n.id}}" ng-repeat="n in news" class="col-sm-4" ng-if="$index < publicationLimit">
-                    <div class="card">
-                        <div class="card-image-wrapper">
-                            <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
-                            <div class="card-image" style="background-image: url({{n.image}})"></div>
+                <div ng-repeat="n in news" class="col-sm-4" ng-if="$index < publicationLimit">
+                    <a href="#/news/{{n.id}}">
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
+                                <div class="card-image" style="background-image: url({{n.image}})"></div>
+                            </div>
+                            <div class="card-contents">
+                                <h5 class="card-date" ng-bind="n.date"></h5>
+                                <h4 class="card-title" ng-bind="n.title[activeLang.title]"></h4>
+                            </div>
                         </div>
-                        <div class="card-contents">
-                            <h5 class="card-date" ng-bind="n.date"></h5>
-                            <h4 class="card-title" ng-bind="n.title[activeLang.title]"></h4>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
         <center>

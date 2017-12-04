@@ -107,6 +107,10 @@ body {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
         color: #78b5ff;
     }
+    .no-padding-xs{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .light-heading{
     color: #479aff;
@@ -191,24 +195,6 @@ h1 {
     position: relative
 }
 
-@media only screen and (max-width: 769px) {
-    .eu-logo {
-        float: none;
-        margin-right: 0;
-    }
-    .eu-text {
-        text-align: center;
-        line-height: 48px;
-    }
-    .container.top {
-        text-align: center;
-    }
-
-    h1{
-        font-size: 32px;
-    }
-}
-
 .heading-container {
     color: #092246;
     background: #fff;
@@ -235,6 +221,17 @@ h1 {
     margin-bottom: 10px;
 }
 
+.footer-image-content>img{
+    margin-right: 10px;
+}
+
+.footer-image-content.right{
+    float: right; margin-right: 40px;
+}
+
+.footer-row{
+    padding: 20px;
+}
 
 /* cards */
 
@@ -441,4 +438,28 @@ h1 {
 .news-detail p{
     text-indent: 50px;
     margin: 30px auto;
+}
+
+
+@media only screen and (max-width: 769px) {
+    .eu-logo {
+        float: none;
+        margin-right: 0;
+    }
+    .eu-text {
+        text-align: center;
+        line-height: 48px;
+    }
+    .container.top {
+        text-align: center;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+    
+    .footer-image-content.right{
+        float: none; 
+        margin-right: 40px;
+    }
 }
