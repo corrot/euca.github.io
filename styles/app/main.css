@@ -94,24 +94,13 @@ body {
 }
 
 .input-gutter-right{
-    margin-right: 20px;
-    margin-top:8px;
+    margin: 6px 0px 16px 0px;
 }
 
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-        color: #479aff;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a:active,
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #78b5ff;
-    }
-    .no-padding-xs{
-        padding-left: 0;
-        padding-right: 0;
-    }
+.input-gutter-right input[type="text"]{
+    width: 93%;
 }
+
 .light-heading{
     color: #479aff;
     font-weight: 200;
@@ -340,13 +329,30 @@ h1 {
     opacity: 1;
 }
 
+#search{
+    color: #fff;
+    font-size: 18px;
+    float: left;
+    background: transparent;
+    border: none;
+    margin: 0 5px;
+    top: 0;
+}
+
 .langs {
-    position: absolute;
+    /* position: absolute;
     right: -35px;
-    top: 15px;
+    top: 15px; */
     color: #479aff;
     cursor: pointer;
     font-weight: bold;
+}
+
+.nav-right-wrapper{
+    margin-top: 14px;
+    float: right;
+    width: 30%;
+    display: -webkit-inline-box;
 }
 
 .langs:hover {
@@ -440,26 +446,122 @@ h1 {
     margin: 30px auto;
 }
 
+/* MODAL */
 
-@media only screen and (max-width: 769px) {
-    .eu-logo {
-        float: none;
-        margin-right: 0;
-    }
-    .eu-text {
-        text-align: center;
-        line-height: 48px;
-    }
-    .container.top {
-        text-align: center;
-    }
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0.8;
+    border: none;
+  }
+  
+  .modal-content {
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  .form-wrapper{
+    height: 58px;
+    width: 52%;
+    text-align: center;
+    border-radius: 0;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    border-bottom: 2px solid #999;
+  }
 
-    h1{
-        font-size: 32px;
-    }
-    
-    .footer-image-content.right{
-        float: none; 
-        margin-right: 40px;
-    }
+  button[name="btn-search"]{
+    height: 50px;
+    background: transparent;
+    border: none;
+    width: 24px;
+    position: absolute;
+    left: 0;
+    color: #555;
+    top: 17px;
+    background: url(/images/search.png);
+    background-repeat: no-repeat;
+  }
+
+  input[type="search"]{
+    height: 50px;
+    width: 86%;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    position: absolute;
+    top: 4px;
+    left: 30px;
+    font-family: 'Oxygen';
+    background-color: white;
+    padding: 12px 20px 12px 10px;
 }
+
+  .fa-times-thin:before {
+	content: '\00d7';
+}
+
+  button[name="btn-close"]{
+    background: transparent;
+    border: none;
+    font-size: 19px;
+    color: #333333c2;
+    position: absolute;
+    top: 13px;
+    right: 0;
+  }
+  
+/* ------------------------------------------------- */
+/* -------------------MEDIA QUERIES----------------- */
+/* ------------------------------------------------- */
+
+  @media only screen and (max-width: 769px) {
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+            color: #479aff;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:active,
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+            color: #78b5ff;
+        }
+
+        .navbar-right-wrapper{
+            float: right;
+        }
+
+        .navbar-right{
+            width: 90px;
+            top: 13px;
+        }
+        .eu-logo {
+            float: none;
+            margin-right: 0;
+        }
+        .eu-text {
+            text-align: center;
+            line-height: 48px;
+        }
+        .container.top {
+            text-align: center;
+        }
+
+        h1{
+            font-size: 32px;
+        }
+        
+        .footer-image-content.right{
+            float: none; 
+            margin-right: 40px;
+        }
+    }
