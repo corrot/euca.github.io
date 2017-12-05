@@ -17,7 +17,6 @@
     <div id="section1" class="container-fluid heading-container">
         <div class="container top">
             <img class="eu-logo" src="images/main-logo.png" alt="logo" />
-            <!-- <h3 class="eu-text"><span ng-bind="lang['euForGeo']"></span></h3> -->
         </div>
     </div>
     <nav class="navbar navbar-default" data-spy="affix" data-offset="136">
@@ -54,30 +53,23 @@
                                 <li><a href="#newsletter" target="_self"><span ng-bind="lang['NewsCoverage']"></span></a></li>
                             </ul>
                         </li>
-                        <!-- <li><a href="#section3"><span ng-bind="lang['ExploreTheResults']"></span></a></li> -->
                         <li class=""><a href="#contact" target="_self"><span ng-bind="lang['Contact']"></span></a></li>
 
-                        <div class="input-group input-gutter-right visible-xs">
-                            <input type="text" class="form-control" results="5" placeholder="Search for...">
+                        <div class="input-group input-gutter-right visible-xs" ng-controller="SearchController">
+                            <input type="text" class="form-control" results="5" placeholder="Search for..." ng-model="searchQuery">
                             <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                    <button  ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                             </span>
+
                         </div>
 
                     </ul>
                     <div class="navbar-right col-xs-4 hidden-xs">
                         <div class="nav-right-wrapper">
-                            <!-- <div class="input-group input-gutter-right">
-                                <input type="text" class="form-control" placeholder="Search for...">
-                                <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                                </span>
-                            </div> -->
                             <button data-toggle="modal" data-target="#modal-search" id="search" class="glyphicon glyphicon-search"></button>
                             <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
                                 <span ng-bind="activeLang.url"></span>
                                 <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
-                                <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
                             </div>
                         </div>
                     </div>
@@ -95,11 +87,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <span class="form-wrapper">
-                    <form action="" method="get">
-                        <button type="submit" name="btn-search" value=""></button>
-                           <input type="search" placeholder="Search" autofocus>
+                    <div action="" method="get" ng-controller="SearchController">
+                        <button id="btn-search" value="" ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()"></button>
+                           <input type="search" id="search-input" placeholder="Search" placeholder="Search for..." ng-model="searchQuery">
                         <button type="close" data-dismiss="modal" aria-label="Close" name="btn-close"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></button>
-                    </form>
+                    </div>
                 </span>
             </div>
         </div>
@@ -128,10 +120,9 @@
                     <div class="footer-image-content right">
                         <img src="images/bs_logo.png" alt="B&S_logo" height="40">
                         <div>
-                            <span ng-bind="lang['cprght1']"></span><br><span ng-bind="lang['cprght2']"></span>
+                            <span ng-bind="lang['cprght1']"></span><br><span ng-bind="lang['cprght2']"></span>s
                         </div>
                     </div>
-                    <!-- <p>Business & Strategies in Europe brings on board its consortium partners NI-CO – Northern Ireland Cooperation Overseas Ltd. and CSD – Center for the Study of Democracy.</p> -->
                 </div>
             </div>
         </div>
@@ -155,9 +146,12 @@
     <!-- Controllers -->
     <script src="scripts/controllers/HomeController.js"></script>
     <script src="scripts/controllers/NewsController.js"></script>
+    <script src="scripts/controllers/SearchController.js"></script>
+    <script src="scripts/controllers/SearchGetController.js"></script>
 
     <!-- Services -->
     <script src="scripts/services/news.js"></script>
+    <script src="scripts/services/search.js"></script>
 
 </body>
 
