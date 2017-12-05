@@ -8,6 +8,7 @@
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="styles/lib/bootstrap.min.css" rel="stylesheet" />
     <link href="styles/lib/ng-image-gallery.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Old+Standard+TT|Oxygen|Roboto|Droid+Serif" rel="stylesheet">
     <link href="styles/app/main.css" rel="stylesheet" />
 </head>
@@ -22,24 +23,19 @@
     <nav class="navbar navbar-default" data-spy="affix" data-offset="136">
         <div class="container">
             <div class="navbar-header">
-                <div class="navbar-right col-xs-9 visible-xs">
-                    <div class="input-group input-gutter-right">
-                        <input type="text" class="form-control" results="5" placeholder="Search for...">
-                        <span class="input-group-btn">
-                                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                        </span>
+                <div class="navbar-right-wrapper">
+                    <div class="navbar-right col-xs-9 visible-xs">
+                        <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
+                            <span ng-bind="activeLang.url"></span>
+                            <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
+                        </div>
                     </div>
-                    <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
-                        <span ng-bind="activeLang.url"></span>
-                        <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
-                        <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
-                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
                 </div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
             </div>
             <div>
                 <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
@@ -60,24 +56,29 @@
                         </li>
                         <!-- <li><a href="#section3"><span ng-bind="lang['ExploreTheResults']"></span></a></li> -->
                         <li class=""><a href="#contact" target="_self"><span ng-bind="lang['Contact']"></span></a></li>
-                        <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ng-bind="lang['WhoWeAre']"></span> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#section41"><span ng-bind="lang['OurTeam']"></span></a></li>
-                                <li><a href="#section42"><span ng-bind="lang['Contact']"></span></a></li>
-                            </ul>
-                        </li> -->
+
+                        <div class="input-group input-gutter-right visible-xs">
+                                <input type="text" class="form-control" results="5" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                        </div>
+
                     </ul>
                     <div class="navbar-right col-xs-4 hidden-xs">
-                        <div class="input-group input-gutter-right">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                            </span>
-                        </div>
-                        <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
-                            <span ng-bind="activeLang.url"></span>
-                            <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
-                            <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
+                            <div class="nav-right-wrapper">
+                            <!-- <div class="input-group input-gutter-right">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div> -->
+                            <button data-toggle="modal" data-target="#modal-search" id="search" class="glyphicon glyphicon-search"></button>
+                            <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
+                                <span ng-bind="activeLang.url"></span>
+                                <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
+                                <!-- <div style="background-image: url({{activeLang.url}})"></div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,6 +88,23 @@
     <div class="body-content" id="content">
         <div ng-view></div>
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-search" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <span class="form-wrapper">
+                    <form action="" method="get">
+                        <button type="submit" name="btn-search" value=""></button>
+                           <input type="search" placeholder="Search" autofocus>
+                        <button type="close" data-dismiss="modal" aria-label="Close" name="btn-close"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></button>
+                    </form>
+                </span>
+            </div>
+        </div>
+    </div>
+
 
     <div class="footer">
         <div class="container-fluid">
