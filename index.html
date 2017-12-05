@@ -23,10 +23,12 @@
         <div class="container">
             <div class="navbar-header">
                 <div class="navbar-right col-xs-9 visible-xs">
-                    <div class="input-group input-gutter-right">
-                        <input type="text" class="form-control" results="5" placeholder="Search for...">
+                    <div class="input-group input-gutter-right" ng-controller="SearchController">
+                        <input type="text" class="form-control" results="5" placeholder="Search for..." ng-model="searchQuery">
                         <span class="input-group-btn">
-                                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                      <button class="btn btn-default btn-search" type="button" ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()">
+                                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
                         </span>
                     </div>
                     <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
@@ -137,9 +139,12 @@
     <!-- Controllers -->
     <script src="scripts/controllers/HomeController.js"></script>
     <script src="scripts/controllers/NewsController.js"></script>
+    <script src="scripts/controllers/SearchController.js"></script>
+    <script src="scripts/controllers/SearchGetController.js"></script>
 
     <!-- Services -->
     <script src="scripts/services/news.js"></script>
+    <script src="scripts/services/search.js"></script>
 
 </body>
 

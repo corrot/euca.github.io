@@ -98,6 +98,10 @@ body {
     margin-top:8px;
 }
 
+.btn-search.disabled{
+    pointer-events: none;
+}
+
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #479aff;

@@ -55,29 +55,6 @@ var langs = {
     }
 }
 
-var publications = [{
-        id: 1,
-        link: '#',
-        image: 'http://adventurefittravel.com/images/ADVFBloggingTeam/BrianaBowley/bottom.jpg',
-        date: 'Nov 29, 2017',
-        title: { 'EN': 'Competition policy', 'GE': 'კონკურენციის პოლიტიკა' }
-    },
-    {
-        id: 2,
-        link: '#',
-        image: 'http://st2.agora.md/news/big/din-momentul-aplicarii-dcfta--republica-moldova-a-exportat-in-ue-marfuri-in-valoare-de-peste-2-2-miliarde--usd-22065.jpg',
-        date: 'Nov 29, 2017',
-        title: { 'EN': 'The Association Agreement', 'GE': 'ასოცირების შეთანხმება' }
-    },
-    {
-        id: 3,
-        link: '#',
-        image: 'https://www.medicaidannuity.com/wp-content/uploads/2016/04/Giving-Cash.jpg',
-        date: 'Nov 29, 2017',
-        title: { 'EN': 'The DCFTA', 'GE': 'DCFTA' }
-    }
-]
-
 var multimedia = [{
         id: 0,
         url: 'images/sample.jpg',
@@ -157,12 +134,23 @@ var mainDescription = {
 }
 
 var app = angular.module('app', ['thatisuday.ng-image-gallery', 'ngRoute']);
+app.directive('myEnter', function() {
+    return function(scope, element, attrs) {
+        element.bind("keydown keypress", function(event) {
+            if (event.which === 13) {
+                scope.$apply(function() {
+                    scope.$eval(attrs.myEnter);
+                });
 
+                event.preventDefault();
+            }
+        });
+    };
+});
 app.controller('myCtrl', [
     '$scope',
     function($scope, $timeout, $interval) {
         $scope.langs = langs;
-        $scope.publications = publications;
         $scope.multimedia = multimedia;
         $scope.coverage = coverage;
         $scope.team = team;
@@ -215,22 +203,15 @@ app.config(function($routeProvider) {
             controller: 'NewsController',
             templateUrl: 'views/news-detail.html'
         })
-        // .when('/singles/:id', {
-        //     controller: 'SinglesController',
-        //     templateUrl: 'views/singles.html'
-        // })
-        // .when('/essay/:id', {
-        //     controller: 'EssayController',
-        //     templateUrl: 'views/essay.html'
-        // })
-        // .when('/about', {
-        //     controller: 'HomeController',
-        //     templateUrl: 'views/about.html'
-        // })
+        .when('/search', {
+            controller: 'SearchGetController',
+            templateUrl: 'views/search-results.html?query',
+        })
         .otherwise({
             redirectTo: '/'
         });
 });
+
 $('#nav').on('affix.bs.affix', function() {
     if (!$(window).scrollTop()) return false;
 });
@@ -276,10 +257,10 @@ $('.dropdown').on('hide.bs.dropdown', function() {
 // ------- smooth scroll on click ------ //
 // ------------------------------------- //
 
-$('.dropdown-menu a').click(function(e){
+$('.dropdown-menu a').click(function(e) {
     e.stopPropagation();
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
+        scrollTop: $($(this).attr('href')).offset().top
     }, 1000);
     return false;
 });
