@@ -1,21 +1,31 @@
 <div class="container">
 
-    <div>Search results for <span ng-bind="$root.searchQuery"></span></div>
-    <div ng-repeat="n in searchResults" class="col-sm-4" ng-if="searchResults">
-        <a href="#/news/{{n.id}}">
-            <div class="card">
-                <div class="card-image-wrapper">
-                    <div class="card-image-overlay"><span class="glyphicon glyphicon-new-window"></span></div>
-                    <div class="card-image" style="background-image: url({{n.image}})"></div>
+    
+    <div ng-repeat="n in searchResults" class="search-found" ng-if="searchResults" >
+               
+        <div class="container">
+                <div class="news-detail">
+                    <div class="container image-container">
+                        <img ng-src="{{n.image}}" alt="News image">
+                        <h1 class="news-title" ng-bind="n.title[activeLang.title]"></h1>                
+                    </div>
+                    <p class="article-line" ng-bind="n.article[activeLang.title]"></p>
+                    <a href="#/news/{{n.id}}"> <p ng-bind="lang['ReadMore']"  style="float: right; margin: 0;"></p>  </a>
+                    <div class="date">
+                        <span style="float:left;" ng-if="activeLang.title == 'EN'">Published on: </span>
+                        <span style="float:left;" ng-if="activeLang.title == 'GE'">გამოქვეყნებულია: </span>            
+                        <span style="float:left;" ng-bind="n.date"></span>
+                    </div>
                 </div>
-                <div class="card-contents">
-                    <h5 class="card-date" ng-bind="n.date"></h5>
-                    <h4 class="card-title" ng-bind="n.title[activeLang.title]"></h4>
-                </div>
+            </div> 
+        </div>
+
+        <div ng-show="!searchResults[0]" class="search-not-found row">
+            <div class="col-md-6">
+                <h1 ng-bind="lang['NoResults']"></h1>
             </div>
-        </a>
-    </div>
-    <div ng-show="!searchResults[0]">
-        <span ng-bind="$root.searchQuery"></span>
-    </div>
+            <div class="col-md-6">                
+                <h4 ng-bind="lang['SorryNoResults']"></h4>  <h4 ng-bind="$root.searchQuery"></h4>  <h4>"</h4>
+            </div>
+        </div>
 </div>

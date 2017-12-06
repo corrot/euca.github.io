@@ -25,7 +25,10 @@ var langs = {
         'address': 'Address',
         'email': 'Email',
         'phone': 'Phone',
-        'NoResults': ''
+        'NoResults': 'No results',
+        'SorryNoResults': 'We\'re sorry, but your search did not match "',
+        'ResultsFound': 'Results found for: ',
+        'ReadMore': 'Read more...'
     },
     GE: {
         'ProjectTitle': 'ჩვენს შესახებ',
@@ -52,7 +55,11 @@ var langs = {
         'addressLine': ['დავით აღმაშენებლის გამზირი 154,', 'თბილისი 0112,', 'საქართველო'],
         'address': 'მისამართი',
         'email': 'ელ-ფოსტა',
-        'phone': 'ტელ.'
+        'phone': 'ტელ.',
+        'NoResults': 'არ მოიძებნა',
+        'SorryNoResults': 'We\'re sorry, but your search did not match "',
+        'ResultsFound': 'შედეგები: ',
+        'ReadMore': 'მეტის ნახვა'        
     }
 }
 
