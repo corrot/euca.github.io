@@ -10,6 +10,8 @@
     <link href="styles/lib/ng-image-gallery.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Old+Standard+TT|Oxygen|Roboto|Droid+Serif" rel="stylesheet">
+    <link href="styles/lib/slick.css" rel="stylesheet" />
+    <link href="styles/lib/slick-theme.css" rel="stylesheet" />
     <link href="styles/app/main.css" rel="stylesheet" />
 </head>
 
@@ -39,7 +41,7 @@
             <div>
                 <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" target="_self"><span ng-bind="lang['Home']"></span></a></li>
+                        <li class="active"><a href="#home" target="_self"><span ng-bind="lang['Home']"></span></a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#about-us" target="_self"><span ng-bind="lang['AboutProject']"></span></a></li>
@@ -78,6 +80,7 @@
         </div>
     </nav>
     <div class="body-content" id="content">
+
         <div ng-view></div>
     </div>
 
@@ -132,12 +135,15 @@
     <div class="toTop"><span class="glyphicon glyphicon-menu-up"></span></div>
 
     <script src="scripts/lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="scripts/lib/angular.min.js"></script>
     <script src="scripts/lib/angular-route.js"></script>
     <script src="scripts/lib/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
     <script src="https://rawgit.com/hammerjs/hammer.js/v2.0.8/hammer.min.js"></script>
     <script src="scripts/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/lib/slick.js"></script>
+    <script type="text/javascript" src="scripts/lib/angular-slick-directive.js"></script>
     <script src="scripts/lib/ng-image-gallery.min.js"></script>
 
     <!-- Modules -->
@@ -152,7 +158,6 @@
     <!-- Services -->
     <script src="scripts/services/news.js"></script>
     <script src="scripts/services/search.js"></script>
-
 </body>
 
 </html>

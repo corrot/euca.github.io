@@ -59,7 +59,7 @@ var langs = {
         'NoResults': 'არ მოიძებნა',
         'SorryNoResults': 'We\'re sorry, but your search did not match "',
         'ResultsFound': 'შედეგები: ',
-        'ReadMore': 'მეტის ნახვა'        
+        'ReadMore': 'მეტის ნახვა'
     }
 }
 
@@ -141,7 +141,7 @@ var mainDescription = {
     'GE': 'ლორემ იპსუმ ბატ საჩუქრებისათვის ულუფა ალპინიზმმა მოჰკლას დაგვეტოვებინა ქვევიდან გუნდისა უცნაურობა ჩითახოვის გამცემს. ვფიცავ უნგრულიც ატირებულიყოს გიხდება უცნაურობა გერასიმოვი დასრულებამდე ჯაველებმა დაეშვათ. ასაქმებს ვფიცავ მოისმის მეჩვიდმეტე გიხდება ბორნად მოქალაქედ. უგედ ეკლესიამდე ჩხავილით გაერთიანებაზე ჰნანობდა მეჩვიდმეტე უნგრულიც დარდიმანდობით გვარეულობის ვიშოვნი. მოხუცებულთაგან ასაქმებს უცნაურობა ბორნად მამყოფე მოგვაბეზროს მოქალაქედ. დალოცვილს ჯაველებმა გიხდება უცნაურობა საწერკალამი დარდიმანდობით უგედ. გარიგდა ვნერვიულობ მოისმის, ბავშვებისათვის მეჩვიდმეტე მოვლენად გგაგაუბედურე, გავაანალიზოთო ათასნაირად სკივრი გაერთიანებაზე. მამყოფე აღიმაღლა თელავში, ჯაველებმა სარქისიანცი, ქა ბოროვჩიკზეც მქენჯნის ულუფა გაუგრძელდათ სიმულაციას ბავშვებისათვის დარდიმანდობით უხმაუროდ. მეთოდურია რედაქტორები გაუგრძელდათ გუნდისა გამოეთხოვა ჩემზედაო ბავშვებისათვის, უგედ დალოცვილს ქვევიდან მქენჯნის. პრეზიდენტობას დაარღვიოს უცნაურობა, გამოეთხოვა აღიმაღლა წყეულიმც მიწოდა რედაქტორები უხმაუროდ მოგიხმარებია.'
 }
 
-var app = angular.module('app', ['thatisuday.ng-image-gallery', 'ngRoute']);
+var app = angular.module('app', ['thatisuday.ng-image-gallery', 'ngRoute', 'slick']);
 app.directive('myEnter', function() {
     return function(scope, element, attrs) {
         element.bind("keydown keypress", function(event) {
@@ -165,6 +165,13 @@ app.controller('myCtrl', [
         $scope.publicationLimit = 3;
         $scope.multimediaLimit = 4;
         $scope.coverageLimit = 4;
+
+        $scope.slickConfig = {
+            infinite: true,
+            speed: 300,
+            'slides-to-show': 4,
+            'slides-to-scroll': 4
+        };
 
         $scope.mainDescription = mainDescription;
 
@@ -276,4 +283,18 @@ $('.dropdown-menu a').click(function(e) {
 // -------------autofocus-on-search-------------
 $('#modal-search').on('shown.bs.modal', function() {
     $("#search-input").focus();
-})
+});
+
+function sliderInit() {
+    $('.home-slideshow').not('.slick-initialized').slick({
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: true,
+        speed: 200
+    });
+};
+
+$(document).ready(function() {
+    sliderInit();
+});
