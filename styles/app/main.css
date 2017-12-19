@@ -232,6 +232,7 @@ h1 {
     width: 100vw;
     height: calc(100vh - 174px);
     background: #092246;
+    overflow: hidden;
 }
 .img-stretch{
     display: block;
