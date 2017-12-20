@@ -1,0 +1,31 @@
+[{
+        "id": 0,
+        "image": "http://adventurefittravel.com/images/ADVFBloggingTeam/BrianaBowley/bottom.jpg",
+        "date": "Nov 29, 2017",
+        "title": { "EN": "Competition policy", "GE": "კონკურენციის პოლიტიკა" },
+        "article": {
+            "EN": "Competition policy represents an effective tool to foster an economy and promote consumers welfare. The Georgian Constitution embraces the free market economy model and expressly entitles the State “to promote the development of free entrepreneurial activity and competition”, foresees sharp limits for the “monopolistic activity”, and highlights consumers` rights protection. (Article 30 GC) ",
+            "GE": "კონკურენციის პოლიტიკა ეფექტიანი საშუალებაა ეკონომიკის გაძლიერებისა და მომხმარებელთა კეთილდღეობის ხელშეწყობისათვის. საქართველოს კონსტიტუცია ითვალისწინებს თავისუფალი საბაზრო ეკონომიკის მოდელს და სახელმწიფოს პირდაპირ აკისრებს ვალდებულებას „ხელი შეუწყოს თავისუფალი მეწარმეობისა და კონკურენციის განვითარებას“. კონსტიტუცია ასევე მკაცრ შეზღუდვებს აწესებს „მონოპოლისტური საქმიანობისთვის“ და ხაზს უსვამს მომხმარებელთა უფლებების დაცვის მნიშვნელობას (მუხლი 30, საქ. კონსტიტუცია)"
+        }
+    },
+    {
+        "id": 1,
+        "image": "http://st2.agora.md/news/big/din-momentul-aplicarii-dcfta--republica-moldova-a-exportat-in-ue-marfuri-in-valoare-de-peste-2-2-miliarde--usd-22065.jpg",
+        "date": "Nov 29, 2017",
+        "title": { "EN": "The Association Agreement", "GE": "ასოცირების შეთანხმება" },
+        "article": {
+            "EN": "The Association Agreement between EU and Georgia (entered into force on 1 July 2016) introduces a preferential trade regime – the Deep and Comprehensive Free Trade Area (DCFTA) aimed at increasing market access between the EU and Georgia based on having better-matched regulations: the EU is the main trade partner of Georgia accounting to almost 1/3 of its trade.            ",
+            "GE": "საქართველო–ევროკავშირს შორის ასოცირების შესახებ შეთანხმების უმნიშვნელოვანესი ნაწილია  ღრმა და ყოვლისმომცველი თავისუფალი სავაჭრო სივრცის შესახებ შეთანხმება (DCFTA), რომელიც რეგულაციების შესაბამისობაში მოყვანით, მიზნად ისახავს ევროკავშირსა და საქართველოს შორის ბაზარზე წვდომის ზრდას. ევროკავშირი საქართველოს ერთ-ერთი უმსხვილესი სავაჭრო პარტნიორია, რომლის წილი საერთო ვაჭრობის თითქმის 1/3 შეადგენს. "
+        }
+    },
+    {
+        "id": 2,
+        "image": "https://www.medicaidannuity.com/wp-content/uploads/2016/04/Giving-Cash.jpg",
+        "date": "Nov 29, 2017",
+        "title": { "EN": "The DCFTA", "GE": "DCFTA" },
+        "article": {
+            "EN": "The DCFTA between the EU and Georgia foresees, inter alia, that “The Parties recognize the importance of free and undistorted competition in their trade relations” and that Each Party “shall maintain in its respective territory comprehensive competition laws” and “shall maintain an authority responsible and appropriately equipped for the effective enforcement of the competition laws” (art 203-204 DCFTA).",
+            "GE": "DCFTA-ის თანახმად, „მხარეები აცნობიერებენ თავისუფალი და შეუზღუდავი კონკურენციის მნიშვნელობას თავიანთ სავაჭრო ურთიერთობებში”, იღებენ ვალდებულებას „დაიცვან და გაატარონ ყოვლისმომცველი კონკურენციის კანონები თავიანთ ტეროტორიაზე” და „პასუხისმგებლობით მოეკიდონ კონკურენციის კანონების ეფექტიან აღსრულებას” (მუხლი 203-204, DCFTA)."
+        }
+    }
+]

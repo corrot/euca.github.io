@@ -1,14 +1,13 @@
-app.controller('HomeController', ['$scope', 'news', function($scope, news) {
+app.controller('HomeController', ['$scope', 'news', 'sliderData', function($scope, news, sliderData) {
     news.success(function(data) {
         $scope.news = data;
+    });
+    sliderData.success(function(data) {
+        $scope.sliderData = data;
 
         $scope.slickConfig = {
-                autoplay: true,
-                autoplaySpeed: 2000,
-
-            }
-            // $scope.selectImage = function(i, j) {
-            //     $scope.selectedImage = $scope.albums[i].images[j].url;
-            // }
+            autoplay: true,
+            autoplaySpeed: 2000,
+        }
     });
 }]);

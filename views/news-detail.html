@@ -2,12 +2,12 @@
     <div class="news-detail">
         <div class="container image-container">
             <img ng-src="{{news.image}}" alt="News image">
-            <h1 class="news-title" ng-bind="news.title[activeLang.title]"></h1>                
+            <h1 class="news-title" class="news-title" ng-bind="news.title[activeLang.title]"></h1>
         </div>
-        <p ng-bind="news.article[activeLang.title]"></p>
+        <div class="article-wrapper" ng-bind-html="news.article[activeLang.title]"></div>
         <div class="date">
             <span ng-if="activeLang.title == 'EN'">Published on: </span>
-            <span ng-if="activeLang.title == 'GE'">გამოქვეყნებულია: </span>            
+            <span ng-if="activeLang.title == 'GE'">გამოქვეყნებულია: </span>
             <span ng-bind="news.date"></span>
         </div>
     </div>

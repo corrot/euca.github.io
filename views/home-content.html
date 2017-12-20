@@ -1,6 +1,6 @@
-<div ng-controller="HomeController">
+<div ng-controller="SliderDataController">
     <div slick class="home-slideshow" speed="1000" autoplay="true">
-        <div class="home-slide" ng-repeat="n in news" background-image="url({{n.image}})!important">
+        <div class="home-slide" ng-repeat="n in sliderData" background-image="url({{n.image}})!important">
             <img class="img-stretch" ng-src="{{n.image}}" />
             <div class="slider-text">
                 <h1 ng-bind="n.title[activeLang.title]"></h1>
@@ -8,8 +8,5 @@
                 <p ng-bind="n.article[activeLang.title]"></p>
             </div>
         </div>
-        <!-- <div class="home-slide"></div>
-    <div class="home-slide"></div>
-    <div class="home-slide"></div> -->
     </div>
 </div>

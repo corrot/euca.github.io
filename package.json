@@ -11,5 +11,8 @@
   "devDependencies": {
     "lite-server": "^2.3.0",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "angular-sanitize": "^1.6.7"
   }
 }
