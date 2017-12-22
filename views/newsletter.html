@@ -4,7 +4,7 @@
         <br/>
         <!-- <div ng-repeat="c in coverage"><a href="{{c.link}}"><span ng-bind="c.title"></span></a></div> -->
         <div class="row" style="margin: 0">
-            <a ng-repeat="p in coverage" class="col-sm-3 coverage-link" href="{{p.link}}">
+            <a ng-repeat="p in mediaCoverage" class="col-sm-3 coverage-link" href="{{p.link}}" target="_blank" ng-if="$index < coverageLimit">
                 <div class="card">
                     <div class="card-image-wrapper sm">
                         <!-- <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div> -->
@@ -18,7 +18,7 @@
             </a>
         </div>
         <center>
-            <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="coverage.length <= coverageLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
+            <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="mediaCoverage.length <= coverageLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
         </center>
     </div>
 </div>

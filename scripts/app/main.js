@@ -64,10 +64,10 @@ var langs = {
 }
 
 var multimedia = [{
-        id: 0,
-        url: 'images/sample.jpg',
-        desc: { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        title: { 'EN': 'image #1', 'GE': 'ფოტო #1' }
+        "id": 0,
+        "url": 'images/sample.jpg',
+        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
+        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' }
     },
     {
         id: 1,
@@ -164,7 +164,6 @@ app.controller('myCtrl', [
         $scope.team = team;
         $scope.publicationLimit = 3;
         $scope.multimediaLimit = 4;
-        $scope.coverageLimit = 4;
 
         $scope.slickConfig = {
             infinite: true,
@@ -179,9 +178,6 @@ app.controller('myCtrl', [
             $scope.publicationLimit += 3;
         }
 
-        $scope.loadCoverage = function() {
-            $scope.coverageLimit += 3;
-        }
         $scope.conf = {
             imgAnim: 'fadeup'
         };
