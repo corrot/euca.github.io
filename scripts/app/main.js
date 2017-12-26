@@ -67,46 +67,23 @@ var multimedia = [{
         "id": 0,
         "url": 'images/sample.jpg',
         "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' }
+        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
+        "videoId": 'NEVFrk-I4ac'
     },
     {
-        id: 1,
-        url: 'images/sample.jpg',
-        desc: { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        title: { 'EN': 'image #2', 'GE': 'ფოტო #2' }
+        "id": 0,
+        "url": 'images/sample.jpg',
+        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
+        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
+        "videoId": 'L2XRuA4QM_Y'
     },
     {
-        id: 2,
-        url: 'images/sample.jpg',
-        desc: { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        title: { 'EN': 'image #3', 'GE': 'ფოტო #3' }
-    },
-    {
-        id: 23,
-        url: 'images/sample.jpg',
-        desc: { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        title: { 'EN': 'image #4', 'GE': 'ფოტო #4' }
+        "id": 0,
+        "url": 'images/sample.jpg',
+        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
+        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
+        "videoId": 'haSpUZMu-ck'
     }
-]
-
-var coverage = [{
-        id: 0,
-        link: '#',
-        title: { 'EN': 'link #4', 'GE': 'link #4' },
-        date: 'JUNE 22, 2017',
-    },
-    {
-        id: 1,
-        link: '#',
-        title: { 'EN': 'link #4', 'GE': 'link #4' },
-        date: 'JUNE 22, 2017',
-    },
-    {
-        id: 2,
-        link: '#',
-        title: { 'EN': 'link #4', 'GE': 'link #4' },
-        date: 'JUNE 22, 2017',
-    },
 ]
 
 var team = [{
@@ -141,7 +118,7 @@ var mainDescription = {
     'GE': 'ლორემ იპსუმ ბატ საჩუქრებისათვის ულუფა ალპინიზმმა მოჰკლას დაგვეტოვებინა ქვევიდან გუნდისა უცნაურობა ჩითახოვის გამცემს. ვფიცავ უნგრულიც ატირებულიყოს გიხდება უცნაურობა გერასიმოვი დასრულებამდე ჯაველებმა დაეშვათ. ასაქმებს ვფიცავ მოისმის მეჩვიდმეტე გიხდება ბორნად მოქალაქედ. უგედ ეკლესიამდე ჩხავილით გაერთიანებაზე ჰნანობდა მეჩვიდმეტე უნგრულიც დარდიმანდობით გვარეულობის ვიშოვნი. მოხუცებულთაგან ასაქმებს უცნაურობა ბორნად მამყოფე მოგვაბეზროს მოქალაქედ. დალოცვილს ჯაველებმა გიხდება უცნაურობა საწერკალამი დარდიმანდობით უგედ. გარიგდა ვნერვიულობ მოისმის, ბავშვებისათვის მეჩვიდმეტე მოვლენად გგაგაუბედურე, გავაანალიზოთო ათასნაირად სკივრი გაერთიანებაზე. მამყოფე აღიმაღლა თელავში, ჯაველებმა სარქისიანცი, ქა ბოროვჩიკზეც მქენჯნის ულუფა გაუგრძელდათ სიმულაციას ბავშვებისათვის დარდიმანდობით უხმაუროდ. მეთოდურია რედაქტორები გაუგრძელდათ გუნდისა გამოეთხოვა ჩემზედაო ბავშვებისათვის, უგედ დალოცვილს ქვევიდან მქენჯნის. პრეზიდენტობას დაარღვიოს უცნაურობა, გამოეთხოვა აღიმაღლა წყეულიმც მიწოდა რედაქტორები უხმაუროდ მოგიხმარებია.'
 }
 
-var app = angular.module('app', ['thatisuday.ng-image-gallery', 'ngRoute', 'ngSanitize', 'slick']);
+var app = angular.module('app', ['thatisuday.ng-image-gallery', 'ngRoute', 'ngSanitize', 'slick', 'youtube-embed']);
 app.directive('myEnter', function() {
     return function(scope, element, attrs) {
         element.bind("keydown keypress", function(event) {
@@ -160,7 +137,6 @@ app.controller('myCtrl', [
     function($scope, $timeout, $interval) {
         $scope.langs = langs;
         $scope.multimedia = multimedia;
-        $scope.coverage = coverage;
         $scope.team = team;
         $scope.publicationLimit = 3;
         $scope.multimediaLimit = 4;
