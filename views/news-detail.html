@@ -1,7 +1,7 @@
 <div class="container">
     <div class="news-detail">
         <div class="container image-container">
-            <img ng-src="{{news.image}}" alt="News image">
+            <img ng-src="{{news.image}}" alt="News image" style="width:100%">
             <h1 class="news-title" class="news-title" ng-bind="news.title[activeLang.title]"></h1>
         </div>
         <div class="article-wrapper" ng-bind-html="news.article[activeLang.title]"></div>
