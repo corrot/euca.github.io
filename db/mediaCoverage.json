@@ -11,7 +11,7 @@
         "url": "images/sample.jpg",
         "link": "http://imedinews.ge/ge/saqartvelo/8363/evrokavshiris-proeqti-opitsialurad-gaikhsna",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "ევროკავშირის პროექტი ოფიციალურად გაიხსნა" },
+        "title": { "EN": "ევროკავშირის პროექტი ოფიციალურად გაიხსნა", "GE": "ევროკავშირის პროექტი ოფიციალურად გაიხსნა" },
         "date": ""
     },
     {
@@ -19,15 +19,7 @@
         "url": "images/sample.jpg",
         "link": "https://ge.mfa.lt/ge/ge/news/evrokavshiris-dapinansebit-sakartvelos-konkurentsiis-saagentos-khelshemtsqobi-proekti-itsqeba ",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "ევროკავშირის დაფინანსებით საქართველოს კონკურენციის სააგენტოს ხელშემწყობი პროექტი იწყება" },
-        "date": ""
-    },
-    {
-        "id": 3,
-        "url": "images/sample.jpg",
-        "link": "http://1tv.ge/ge/news/view/154535.html",
-        "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "ფოტო #1" },
+        "title": { "EN": "ევროკავშირის დაფინანსებით საქართველოს კონკურენციის სააგენტოს ხელშემწყობი პროექტი იწყება", "GE": "ევროკავშირის დაფინანსებით საქართველოს კონკურენციის სააგენტოს ხელშემწყობი პროექტი იწყება" },
         "date": ""
     },
     {
@@ -35,7 +27,7 @@
         "url": "images/sample.jpg",
         "link": "http://www.interpressnews.ge/ge/sazogadoeba/424679-konkurenciis-saagentoshi-evrokavshiris-dakhmarebis-proeqti-daitsyo.html?ar=A",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "კონკურენციის სააგენტოში ევროკავშირის დახმარების პროექტი დაიწყო" },
+        "title": { "EN": "კონკურენციის სააგენტოში ევროკავშირის დახმარების პროექტი დაიწყო", "GE": "კონკურენციის სააგენტოში ევროკავშირის დახმარების პროექტი დაიწყო" },
         "date": ""
     },
     {
@@ -43,7 +35,7 @@
         "url": "images/sample.jpg",
         "link": "http://agrokavkaz.ge/axali-ambebi/evrokavshiri-mkhars-utchers-saqarthvelos-konkurentsiis-saagentos.html",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "ევროკავშირი მხარს უჭერს საქართველოს კონკურენციის სააგენტოს" },
+        "title": { "EN": "ევროკავშირი მხარს უჭერს საქართველოს კონკურენციის სააგენტოს", "GE": "ევროკავშირი მხარს უჭერს საქართველოს კონკურენციის სააგენტოს" },
         "date": ""
     },
     {
@@ -59,7 +51,7 @@
         "url": "images/sample.jpg",
         "link": "http://www.interpressnews.ge/ge/sazogadoeba/436502-konkurenciis-saagentos-organizebith-seminari-imartheba.html?ar=A",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "კონკურენციის სააგენტოს ორგანიზებით სემინარი იმართება" },
+        "title": { "EN": "კონკურენციის სააგენტოს ორგანიზებით სემინარი იმართება", "GE": "კონკურენციის სააგენტოს ორგანიზებით სემინარი იმართება" },
         "date": ""
     },
     {
@@ -67,7 +59,7 @@
         "url": "images/sample.jpg",
         "link": "https://bpn.ge/finansebi/34977-konkurenciis-saagentos-organizebith-khval-seminari-konkurenciis-kanonmdebloba-evrokavshirsa-da-saqarthveloshi-gaimartheba.html?device=xhtml&lang=ka-GE",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "კონკურენციის სააგენტოს ორგანიზებით, ხვალ სემინარი - „კონკურენციის კანონმდებლობა ევროკავშირსა და საქართველოში“ გაიმართება" },
+        "title": { "EN": "კონკურენციის სააგენტოს ორგანიზებით, ხვალ სემინარი - „კონკურენციის კანონმდებლობა ევროკავშირსა და საქართველოში“ გაიმართება", "GE": "კონკურენციის სააგენტოს ორგანიზებით, ხვალ სემინარი - „კონკურენციის კანონმდებლობა ევროკავშირსა და საქართველოში“ გაიმართება" },
         "date": ""
     },
     {
@@ -75,7 +67,7 @@
         "url": "images/sample.jpg",
         "link": "http://www.parliament.ge/ge/saparlamento-saqmianoba/komitetebi/dargobrivi-ekonomikisa-da-ekonomikuri-politikis-komiteti/axali-ambebi-dargobrivi/roman-kakulias-shexvedra-gaeros-vachrobisa-da-ganvitarebis-organizaciis-unctad-konkurenciis-politikisa-da-momxmarebelta-dacvis-filialis-xelmdzgvaneltan.page ",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "რომან კაკულიას შეხვედრა გაეროს ვაჭრობისა და განვითარების ორგანიზაციის (UNCTAD), კონკურენციის პოლიტიკისა და მომხმარებელთა დაცვის ფილიალის ხელმძღვანელთან" },
+        "title": { "EN": "რომან კაკულიას შეხვედრა გაეროს ვაჭრობისა და განვითარების ორგანიზაციის (UNCTAD), კონკურენციის პოლიტიკისა და მომხმარებელთა დაცვის ფილიალის ხელმძღვანელთან", "GE": "რომან კაკულიას შეხვედრა გაეროს ვაჭრობისა და განვითარების ორგანიზაციის (UNCTAD), კონკურენციის პოლიტიკისა და მომხმარებელთა დაცვის ფილიალის ხელმძღვანელთან" },
         "date": ""
     },
     {
@@ -83,7 +75,7 @@
         "url": "images/sample.jpg",
         "link": "http://www.parliament.ge/ge/saparlamento-saqmianoba/komitetebi/evropastan-integraciis-komiteti-143/axali-ambebi1910/beqa-nacvlishvilis-shexvedra-gaeros-vachrobisa-da-ganvitarebis-organizaciis-unctad-konkurenciis-politikisa-da-momxmarebelta-dacvis-filialis-xelmdzgvaneltan.page",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "ბექა ნაცვლიშვილის შეხვედრა გაეროს ვაჭრობისა და განვითარების ორგანიზაციის (UNCTAD), კონკურენციის პოლიტიკისა და მომხმარებელთა დაცვის ფილიალის ხელმძღვანელთან" },
+        "title": { "EN": "ბექა ნაცვლიშვილის შეხვედრა გაეროს ვაჭრობისა და განვითარების ორგანიზაციის (UNCTAD), კონკურენციის პოლიტიკისა და მომხმარებელთა დაცვის ფილიალის ხელმძღვანელთან", "GE": "ბექა ნაცვლიშვილის შეხვედრა გაეროს ვაჭრობისა და განვითარების ორგანიზაციის (UNCTAD), კონკურენციის პოლიტიკისა და მომხმარებელთა დაცვის ფილიალის ხელმძღვანელთან" },
         "date": ""
     },
     {
@@ -91,7 +83,7 @@
         "url": "images/sample.jpg",
         "link": "https://www.tsu.ge/ge/mainnews/B3ovoVpCjBH0ac4J8/?print=yes",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "კონკურენციის პოლიტიკა: თანამედროვე ტენდენციები და გამოწვევები" },
+        "title": { "EN": "კონკურენციის პოლიტიკა: თანამედროვე ტენდენციები და გამოწვევები", "GE": "კონკურენციის პოლიტიკა: თანამედროვე ტენდენციები და გამოწვევები" },
         "date": ""
     },
     {
@@ -99,7 +91,7 @@
         "url": "images/sample.jpg",
         "link": "http://www.interpressnews.ge/ge/sazogadoeba/463368-17-18-noembers-konferencia-konkurenciis-politika-thanamedrove-tendenciebi-da-gamotsvevebi-gaimartheba.html?ar=A",
         "desc": { "EN": "meeting #1", "GE": "შეხვედრა #1" },
-        "title": { "EN": "image #1", "GE": "17-18 ნოემბერს კონფერენცია - „კონკურენციის პოლიტიკა: თანამედროვე ტენდენციები და გამოწვევები“ გაიმართება" },
+        "title": { "EN": "17-18 ნოემბერს კონფერენცია - „კონკურენციის პოლიტიკა: თანამედროვე ტენდენციები და გამოწვევები“ გაიმართება", "GE": "17-18 ნოემბერს კონფერენცია - „კონკურენციის პოლიტიკა: თანამედროვე ტენდენციები და გამოწვევები“ გაიმართება" },
         "date": ""
     }
 ]
