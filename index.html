@@ -12,127 +12,134 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Old+Standard+TT|Oxygen|Roboto|Droid+Serif" rel="stylesheet">
     <link href="styles/lib/slick.css" rel="stylesheet" />
     <link href="styles/lib/slick-theme.css" rel="stylesheet" />
+    <link href="styles/app/loader.css" rel="stylesheet" />
     <link href="styles/app/main.css" rel="stylesheet" />
 </head>
 
-<body ng-app="app" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190">
-    <div id="section1" class="container-fluid heading-container">
-        <div class="container top">
-            <img class="eu-logo" src="images/main-logo.png" alt="logo" />
+<body ng-app="app" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="190" ng-cloak>
+    <div class="loader-wrapper">
+        <!-- <h2>Support to the Georgian Competition Agency</h2> -->
+        <div class="loader">
+            loading...
         </div>
     </div>
-    <nav class="navbar navbar-default" data-spy="affix" data-offset="136">
-        <div class="container">
-            <div class="navbar-header">
-                <div class="navbar-right-wrapper">
-                    <div class="navbar-right col-xs-9 visible-xs">
-                        <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
-                            <span ng-bind="activeLang.url"></span>
-                            <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
-                        </div>
-                    </div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                </div>
+    <div class="page-content">
+        <div id="section1" class="container-fluid heading-container">
+            <div class="container top">
+                <img class="eu-logo" src="images/main-logo.png" alt="logo" />
             </div>
-            <div>
-                <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#home" target="_self"><span ng-bind="lang['Home']"></span></a></li>
-                        <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#about-us" target="_self"><span ng-bind="lang['AboutProject']"></span></a></li>
-                                <li><a href="#our-team" target="_self"><span ng-bind="lang['OurTeam']"></span></a></li>
-                            </ul>
-                        </li> -->
-                        <li class=""><a href="#about-us" target="_self"><span ng-bind="lang['AboutProject']"></span></a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#news" target="_self"><span ng-bind="lang['Newsletter']"></span></a></li>
-                                <!-- <li><a href="#multimedia" target="_self"><span ng-bind="lang['Multimedia']"></span></a></li> -->
-                                <li><a href="#newsletter" target="_self"><span ng-bind="lang['Multimedia']"></span></a></li>
-                            </ul>
-                        </li>
-                        <li class=""><a href="#contact" target="_self"><span ng-bind="lang['Contact']"></span></a></li>
-
-                        <div class="input-group input-gutter-right visible-xs" ng-controller="SearchController">
-                            <input type="text" class="form-control" results="5" placeholder="Search for..." ng-model="searchQuery">
-                            <span class="input-group-btn">
-                                    <button  ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                            </span>
-
-                        </div>
-
-                    </ul>
-                    <div class="navbar-right col-xs-4 hidden-xs">
-                        <div class="nav-right-wrapper">
-                            <button data-toggle="modal" data-target="#modal-search" id="search" class="glyphicon glyphicon-search"></button>
+        </div>
+        <nav class="navbar navbar-default" data-spy="affix" data-offset="136">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-right-wrapper">
+                        <div class="navbar-right col-xs-9 visible-xs">
                             <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
                                 <span ng-bind="activeLang.url"></span>
                                 <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
                             </div>
                         </div>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse relative" id="myNavbar" style="padding: 0">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#home" target="_self"><span ng-bind="lang['Home']"></span></a></li>
+                            <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['AboutUs']"></span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#about-us" target="_self"><span ng-bind="lang['AboutProject']"></span></a></li>
+                                <li><a href="#our-team" target="_self"><span ng-bind="lang['OurTeam']"></span></a></li>
+                            </ul>
+                        </li> -->
+                            <li class=""><a href="#about-us" target="_self"><span ng-bind="lang['AboutProject']"></span></a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span ng-bind="lang['News']"></span> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#news" target="_self"><span ng-bind="lang['Newsletter']"></span></a></li>
+                                    <!-- <li><a href="#multimedia" target="_self"><span ng-bind="lang['Multimedia']"></span></a></li> -->
+                                    <li><a href="#newsletter" target="_self"><span ng-bind="lang['Multimedia']"></span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#contact" target="_self"><span ng-bind="lang['Contact']"></span></a></li>
+
+                            <div class="input-group input-gutter-right visible-xs" ng-controller="SearchController">
+                                <input type="text" class="form-control" results="5" placeholder="Search for..." ng-model="searchQuery">
+                                <span class="input-group-btn">
+                                    <button  ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+
+                            </div>
+
+                        </ul>
+                        <div class="navbar-right col-xs-4 hidden-xs">
+                            <div class="nav-right-wrapper">
+                                <button data-toggle="modal" data-target="#modal-search" id="search" class="glyphicon glyphicon-search"></button>
+                                <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
+                                    <span ng-bind="activeLang.url"></span>
+                                    <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </nav>
+        <div class="body-content" id="content">
+            <div ng-view></div>
         </div>
-    </nav>
-    <div class="body-content" id="content">
-        <div ng-view></div>
-    </div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="modal-search" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <span class="form-wrapper">
+        <!-- Modal -->
+        <div class="modal fade" id="modal-search" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <span class="form-wrapper">
                     <div action="" method="get" ng-controller="SearchController">
                         <button id="btn-search" value="" ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()"></button>
                            <input type="search" id="search-input" placeholder="Search" placeholder="Search for..." ng-model="searchQuery">
                         <button type="close" data-dismiss="modal" aria-label="Close" name="btn-close"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></button>
                     </div>
                 </span>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="footer">
-        <div class="container-fluid">
-            <div class="row footer-row">
-                <div class="col-sm-4">
-                    <div class="footer-image-content">
-                        <img src="images/logo-delegations.jpg" alt="EU_logo" height="40">
-                        <div>
-                            <span ng-bind="lang['eustr1']"></span><br><span ng-bind="lang['eustr2']"></span>
-                        </div>
-                    </div>
-                    <p ng-bind="lang['eubigstr']">The contents of this website are the sole responsibility of B&S Europe and its consortium partners and can in no way be taken to reflect the views of the European Union.</p>
-                </div>
-                <div class="col-sm-4" style="text-align: center;">
-                    <p ng-bind="lang['Contact']"></p>
-                    <p ng-bind="lang['addressLine'][0]"></p>
-                    <p ng-bind="lang['addressLine'][1]"></p>
-                    <p ng-bind="lang['addressLine'][2]"></p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="footer-image-content right">
-                        <img src="images/bs_logo.png" alt="B&S_logo" height="40">
-                        <div>
-                            <span ng-bind="lang['cprght1']"></span><br><span ng-bind="lang['cprght2']"></span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row footer-row">
+                    <div class="col-sm-4">
+                        <div class="footer-image-content">
+                            <img src="images/logo-delegations.jpg" alt="EU_logo" height="40">
+                            <div>
+                                <span ng-bind="lang['eustr1']"></span><br><span ng-bind="lang['eustr2']"></span>
+                            </div>
+                        </div>
+                        <p ng-bind="lang['eubigstr']">The contents of this website are the sole responsibility of B&S Europe and its consortium partners and can in no way be taken to reflect the views of the European Union.</p>
+                    </div>
+                    <div class="col-sm-4" style="text-align: center;">
+                        <p ng-bind="lang['Contact']"></p>
+                        <p ng-bind="lang['addressLine'][0]"></p>
+                        <p ng-bind="lang['addressLine'][1]"></p>
+                        <p ng-bind="lang['addressLine'][2]"></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer-image-content right">
+                            <img src="images/bs_logo.png" alt="B&S_logo" height="40">
+                            <div>
+                                <span ng-bind="lang['cprght1']"></span><br><span ng-bind="lang['cprght2']"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toTop"><span class="glyphicon glyphicon-menu-up"></span></div>
     </div>
-    </div>
-    <div class="toTop"><span class="glyphicon glyphicon-menu-up"></span></div>
     <script src="scripts/lib/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 

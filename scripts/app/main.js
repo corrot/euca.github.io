@@ -270,5 +270,9 @@ function sliderInit() {
 };
 
 $(document).ready(function() {
-    sliderInit();
+    setTimeout(() => {
+        $('.loader-wrapper').hide('slow');
+        $('.page-content').show();
+        sliderInit();
+    });
 });

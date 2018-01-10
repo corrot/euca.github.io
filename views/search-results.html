@@ -5,13 +5,13 @@
         <div class="container">
             <div class="news-detail">
                 <div class="container image-container">
-                    <img ng-src="{{n.image}}" alt="News image">
-                    <h1 class="news-title" ng-bind="n.title[activeLang.title]"></h1>
+                    <h3 class="news-title" ng-bind="n.title[activeLang.title]"></h3>
+                    <img ng-src="{{n.image}}" alt="News image" style="width: 20%; min-height: 0" />
+                    <div class="article-line" ng-bind-html="n.article[activeLang.title]"></div>
+                    <a href="#/news/{{n.id}}">
+                        <p ng-bind="lang['ReadMore']" style="float: right; margin: 0;"></p>
+                    </a>
                 </div>
-                <div class="article-line" ng-bind-html="n.article[activeLang.title]"></div>
-                <a href="#/news/{{n.id}}">
-                    <p ng-bind="lang['ReadMore']" style="float: right; margin: 0;"></p>
-                </a>
                 <div class="date">
                     <span style="float:left;" ng-if="activeLang.title == 'EN'">Published on: </span>
                     <span style="float:left;" ng-if="activeLang.title == 'GE'">გამოქვეყნებულია: </span>

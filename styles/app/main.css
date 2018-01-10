@@ -1,7 +1,23 @@
 @import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
-
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 *{
     outline: none!important;
+}
+.page-content{
+    display: none;
+    transform-origin: 0 0;
+    height:100%
+}
+.loader-wrapper{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
 }
 input.form-control:active{
     box-shadow: none!important;
@@ -678,3 +694,4 @@ h1 {
               padding-bottom: 200px;
           }
     }
+
