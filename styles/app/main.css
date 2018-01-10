@@ -246,7 +246,7 @@ h1 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     color: #fff;
     display: block;
@@ -464,17 +464,14 @@ h1 {
     min-height: 236px;
 }
 
-.news-detail h1{
-    background: rgba(0,0,0,.7);
-    padding: 40px 20px;
-    position: absolute;
+.news-detail h3{
     bottom: 0px;
     margin: 0;
-    position: absolute;
-    color: white;
-    letter-spacing: 2px;
     width: 100%;
-    
+    padding: 0 20px;
+    border-left:2px solid;
+    margin: 15px 0;
+    line-height: 36px;
 }
 
 .news-detail .date { 
@@ -492,7 +489,6 @@ h1 {
 }
 
 .news-detail p{
-    text-indent: 30px;
     line-height:24px;
 }
 

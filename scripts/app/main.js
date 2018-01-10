@@ -28,7 +28,8 @@ var langs = {
         'NoResults': 'No results',
         'SorryNoResults': 'We\'re sorry, but your search did not match "',
         'ResultsFound': 'Results found for: ',
-        'ReadMore': 'Read more...'
+        'ReadMore': 'Read more...',
+        'LoadMore': 'Load More '
     },
     GE: {
         'ProjectTitle': 'ჩვენს შესახებ',
@@ -59,7 +60,8 @@ var langs = {
         'NoResults': 'არ მოიძებნა',
         'SorryNoResults': 'We\'re sorry, but your search did not match "',
         'ResultsFound': 'შედეგები: ',
-        'ReadMore': 'მეტის ნახვა'
+        'ReadMore': 'მეტის ნახვა',
+        'LoadMore': 'მეტის ჩვენება '
     }
 }
 
