@@ -1,11 +1,11 @@
 <div id="section33" class="section">
     <div class="container">
-        <h1><span ng-bind="lang['NewsCoverage']"></span></h1>
+        <h1><span ng-bind="lang['Multimedia']"></span></h1>
         <br/>
         <!-- <div ng-repeat="c in coverage"><a href="{{c.link}}"><span ng-bind="c.title"></span></a></div> -->
         <div class="row" style="margin: 0">
             <a ng-repeat="p in mediaCoverage" class="col-sm-3 coverage-link" href="{{p.link}}" target="_blank" ng-if="$index < coverageLimit">
-                <div class="card">
+                <div ng-if="!p.videoId" class="card">
                     <div class="card-image-wrapper sm">
                         <!-- <div class="card-image-overlay"><span class="glyphicon glyphicon-eye-open"></span></div> -->
                         <div class="card-image" style="background-image: url(images/doc.png)"></div>
@@ -15,10 +15,11 @@
                         <h4 class="card-title" ng-bind="p.title[activeLang.title]"></h4>
                     </div>
                 </div>
+                <youtube-video class="card" ng-if="p.videoId" video-id="p.videoId" player-width="'100%'" player-height="'200px'"></youtube-video>
             </a>
         </div>
         <center>
-            <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="mediaCoverage.length <= coverageLimit">Load more <span class="glyphicon glyphicon-menu-down"></span></div>
+            <div class="btn btn-default" ng-click="loadCoverage()" ng-disabled="mediaCoverage.length <= coverageLimit"><span ng-bind="lang['LoadMore']"></span><span class="glyphicon glyphicon-menu-down"></span></div>
         </center>
     </div>
 </div>

@@ -1,16 +1,16 @@
 [{
         "id": 0,
-        "image": "http://adventurefittravel.com/images/ADVFBloggingTeam/BrianaBowley/bottom.jpg",
+        "image": "images/for_news/2.png",
         "date": "Nov 29, 2017",
         "title": { "EN": "Competition policy", "GE": "კონკურენციის პოლიტიკა" },
         "article": {
-            "EN": "Competition policy represents an effective tool to foster an economy and promote consumers welfare. The Georgian Constitution embraces the free market economy model and expressly entitles the State “to promote the development of free entrepreneurial activity and competition”, foresees sharp limits for the “monopolistic activity”, and highlights consumers` rights protection. (Article 30 GC) ",
+            "EN": "Competition policy represents an effective tool to foster economy and promote consumers welfare. The Georgian Constitution embraces the free market economy model and expressly entitles the State “to promote the development of free entrepreneurial activity and competition”, foresees sharp limits for the “monopolistic activity”, and highlights consumers` rights protection. (Article 30 GC) ",
             "GE": "კონკურენციის პოლიტიკა ეფექტიანი საშუალებაა ეკონომიკის გაძლიერებისა და მომხმარებელთა კეთილდღეობის ხელშეწყობისათვის. საქართველოს კონსტიტუცია ითვალისწინებს თავისუფალი საბაზრო ეკონომიკის მოდელს და სახელმწიფოს პირდაპირ აკისრებს ვალდებულებას „ხელი შეუწყოს თავისუფალი მეწარმეობისა და კონკურენციის განვითარებას“. კონსტიტუცია ასევე მკაცრ შეზღუდვებს აწესებს „მონოპოლისტური საქმიანობისთვის“ და ხაზს უსვამს მომხმარებელთა უფლებების დაცვის მნიშვნელობას (მუხლი 30, საქ. კონსტიტუცია)"
         }
     },
     {
         "id": 1,
-        "image": "http://st2.agora.md/news/big/din-momentul-aplicarii-dcfta--republica-moldova-a-exportat-in-ue-marfuri-in-valoare-de-peste-2-2-miliarde--usd-22065.jpg",
+        "image": "images/for_news/1.png",
         "date": "Nov 29, 2017",
         "title": { "EN": "The Association Agreement", "GE": "ასოცირების შეთანხმება" },
         "article": {
@@ -20,7 +20,7 @@
     },
     {
         "id": 2,
-        "image": "https://www.medicaidannuity.com/wp-content/uploads/2016/04/Giving-Cash.jpg",
+        "image": "images/for_news/3.png",
         "date": "Nov 29, 2017",
         "title": { "EN": "The DCFTA", "GE": "DCFTA" },
         "article": {

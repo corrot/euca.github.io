@@ -3,9 +3,11 @@
         <div class="container image-container">
             <h3 class="news-title" class="news-title" ng-bind="news.title[activeLang.title]">
             </h3>
-            <img ng-src="{{news.image}}" alt="News image" style="width:100%">
+            <p class="article-wrapper">
+                <img ng-src="{{news.image}}" alt="News image" style="width:40%">
+                <span class=" text-justify" ng-bind-html="news.article[activeLang.title]"></span>
+            </p>
         </div>
-        <div class="article-wrapper" ng-bind-html="news.article[activeLang.title]"></div>
         <div class="date">
             <span ng-if="activeLang.title == 'EN'">Published on: </span>
             <span ng-if="activeLang.title == 'GE'">გამოქვეყნებულია: </span>
