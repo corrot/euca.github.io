@@ -18,7 +18,7 @@ var langs = {
         'Home': 'Home',
         'SeeMore': 'See more...',
         'eustr1': 'This project is funded',
-        'eustr2': 'by the European Union.',
+        'eustr2': 'by the European Union',
         'eubigstr': 'The contents of this website are the sole responsibility of B&S Europe and its consortium partners and can in no way be taken to reflect the views of the European Union.',
         'euForGeo': 'The European Union for Georgia',
         'addressLine': ['David Agmashenebeli Ave 154,', 'Tbilisi City 0112, Georgia'],
@@ -50,7 +50,7 @@ var langs = {
         'Home': 'მთავარი',
         'SeeMore': 'მეტი...',
         'eustr1': 'პროექტს აფინანსებს',
-        'eustr2': 'ევროკავშირი.',
+        'eustr2': 'ევროკავშირი',
         'eubigstr': 'წინამდებარე ვებსაიტი შექმნილია ევროკავშირის დახმარებით. მის შინაარსზე პასუხისმგებელია მხოლოდ კონტრაქტორი და პუბლიკაციის შინაარსის ევროკავშირის პოზიციად აღქმა დაუშვებელია',
         'euForGeo': 'ევროკავშირი საქართველოსთვის',
         'addressLine': ['დავით აღმაშენებლის გამზირი 154,', 'თბილისი 0112,', 'საქართველო'],
@@ -60,33 +60,10 @@ var langs = {
         'NoResults': 'არ მოიძებნა',
         'SorryNoResults': 'We\'re sorry, but your search did not match "',
         'ResultsFound': 'შედეგები: ',
-        'ReadMore': 'მეტის ნახვა',
+        'ReadMore': 'მეტის ნახვა...',
         'LoadMore': 'მეტის ჩვენება '
     }
 }
-
-var multimedia = [{
-        "id": 0,
-        "url": 'images/sample.jpg',
-        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
-        "videoId": 'NEVFrk-I4ac'
-    },
-    {
-        "id": 0,
-        "url": 'images/sample.jpg',
-        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
-        "videoId": 'L2XRuA4QM_Y'
-    },
-    {
-        "id": 0,
-        "url": 'images/sample.jpg',
-        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
-        "videoId": 'haSpUZMu-ck'
-    }
-]
 
 var team = [{
         id: 0,
@@ -138,7 +115,6 @@ app.controller('myCtrl', [
     '$scope',
     function($scope, $timeout, $interval) {
         $scope.langs = langs;
-        $scope.multimedia = multimedia;
         $scope.team = team;
         $scope.publicationLimit = 3;
         $scope.multimediaLimit = 4;
