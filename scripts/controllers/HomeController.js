@@ -1,3 +1,4 @@
+var app = angular.module('app');
 app.controller('HomeController', ['$scope', 'news', 'sliderData', 'mediaCoverage', function($scope, news, sliderData, mediaCoverage) {
     news.success(function(data) {
         $scope.news = data;

@@ -1,3 +1,5 @@
+var app = angular.module('app');
+
 app.controller('SearchController', ['$scope', 'news', '$routeParams', '$location', '$window', '$rootScope', '$route', function($scope, news, $routeParams, $location, $window, $rootScope, $route) {
     news.success(function(data) {
         $scope.searchQuery = "";
@@ -6,13 +8,13 @@ app.controller('SearchController', ['$scope', 'news', '$routeParams', '$location
             var news = data;
             var results = $scope.searchResults;
 
-            news.forEach(n => {
+            news.forEach(function (n) {
                 var searchString = $scope.searchQuery.toLowerCase();
                 var article = n.article[$scope.activeLang.title].toLowerCase();
 
                 if (article.indexOf(searchString) > -1) {
                     var contains = false;
-                    results.forEach(result => {
+                    results.forEach(function(result) {
                         if (result.id == n.id) {
                             contains = true;
                             return;

@@ -588,12 +588,16 @@ h1 {
     background: transparent;
     border: none;
     font-size: 19px;
-    color: #333333c2;
+    color: #333333;
     position: absolute;
     top: 13px;
     right: 0;
   }
   
+  input::-ms-clear {
+    display: none;
+}
+
 /* ------------------------------------------------- */
 /* --------------SEARCH RESULTS PAGE---------------- */
 /* ------------------------------------------------- */

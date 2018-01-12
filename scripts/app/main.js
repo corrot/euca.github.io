@@ -270,7 +270,7 @@ function sliderInit() {
 };
 
 $(document).ready(function() {
-    setTimeout(() => {
+    setTimeout(function() {
         $('.loader-wrapper').hide('slow');
         $('.page-content').show();
         sliderInit();
