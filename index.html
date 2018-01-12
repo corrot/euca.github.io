@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Support to the Georgian Competition Agency</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="styles/lib/bootstrap.min.css" rel="stylesheet" />
     <link href="styles/lib/ng-image-gallery.min.css" rel="stylesheet" />
@@ -67,7 +67,7 @@
                             <li class=""><a href="#contact" target="_self"><span ng-bind="lang['Contact']"></span></a></li>
 
                             <div class="input-group input-gutter-right visible-xs" ng-controller="SearchController">
-                                <input type="text" class="form-control" results="5" placeholder="Search for..." ng-model="searchQuery">
+                                <input type="text" class="form-control" style="width: calc( 100% - 40px )" results="5" placeholder="Search for..." ng-model="searchQuery">
                                 <span class="input-group-btn">
                                     <button  ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                                 </span>

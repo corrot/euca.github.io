@@ -60,33 +60,10 @@ var langs = {
         'NoResults': 'არ მოიძებნა',
         'SorryNoResults': 'We\'re sorry, but your search did not match "',
         'ResultsFound': 'შედეგები: ',
-        'ReadMore': 'მეტის ნახვა',
+        'ReadMore': 'მეტის ნახვა...',
         'LoadMore': 'მეტის ჩვენება '
     }
 }
-
-var multimedia = [{
-        "id": 0,
-        "url": 'images/sample.jpg',
-        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
-        "videoId": 'NEVFrk-I4ac'
-    },
-    {
-        "id": 0,
-        "url": 'images/sample.jpg',
-        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
-        "videoId": 'L2XRuA4QM_Y'
-    },
-    {
-        "id": 0,
-        "url": 'images/sample.jpg',
-        "desc": { 'EN': 'meeting #1', 'GE': 'შეხვედრა #1' },
-        "title": { 'EN': 'image #1', 'GE': 'ფოტო #1' },
-        "videoId": 'haSpUZMu-ck'
-    }
-]
 
 var team = [{
         id: 0,
@@ -138,7 +115,6 @@ app.controller('myCtrl', [
     '$scope',
     function($scope, $timeout, $interval) {
         $scope.langs = langs;
-        $scope.multimedia = multimedia;
         $scope.team = team;
         $scope.publicationLimit = 3;
         $scope.multimediaLimit = 4;
