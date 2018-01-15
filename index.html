@@ -37,7 +37,7 @@
                         <div class="navbar-right col-xs-9 visible-xs">
                             <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
                                 <span ng-bind="activeLang.url"></span>
-                                <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
+                                <span><img class="flagImage" ng-src="{{activeLang.image}}"></span>
                             </div>
                         </div>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -72,16 +72,14 @@
                                 <span class="input-group-btn">
                                     <button  ng-class="{'disabled' : !searchQuery}" ng-click="search()" my-enter="search()" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                                 </span>
-
                             </div>
-
                         </ul>
                         <div class="navbar-right col-xs-4 hidden-xs">
                             <div class="nav-right-wrapper">
                                 <button data-toggle="modal" data-target="#modal-search" id="search" class="glyphicon glyphicon-search"></button>
                                 <div class="langs" ng-init="activeLang=flags[0]" ng-click="changeLanguage(activeLang)">
                                     <span ng-bind="activeLang.url"></span>
-                                    <span><img class="flagImage" ng-src="{{flagImgUrl}}"></span>
+                                    <span><img class="flagImage" ng-src="{{activeLang.image}}"></span>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +90,6 @@
         <div class="body-content" id="content">
             <div ng-view></div>
         </div>
-
 
         <!-- Modal -->
         <div class="modal fade" id="modal-search" tabindex="-1" role="dialog" aria-hidden="true">
@@ -148,7 +145,7 @@
     <script src="scripts/lib/angular-route.js"></script>
     <script src="scripts/lib/angular-animate.min.js"></script>
     <script src="scripts/lib/angular-sanitize.js"></script>
-  
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
     <script src="https://rawgit.com/hammerjs/hammer.js/v2.0.8/hammer.min.js"></script>
     <script src="scripts/lib/bootstrap.min.js"></script>

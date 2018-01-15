@@ -51,7 +51,7 @@ var langs = {
         'SeeMore': 'მეტი...',
         'eustr1': 'პროექტს აფინანსებს',
         'eustr2': 'ევროკავშირი',
-        'eubigstr': 'წინამდებარე ვებსაიტი შექმნილია ევროკავშირის დახმარებით. მის შინაარსზე პასუხისმგებელია მხოლოდ კონტრაქტორი და პუბლიკაციის შინაარსის ევროკავშირის პოზიციად აღქმა დაუშვებელია',
+        'eubigstr': 'წინამდებარე ვებსაიტი შექმნილია ევროკავშირის დახმარებით. მის შინაარსზე პასუხისმგებელია მხოლოდ კონტრაქტორი და პუბლიკაციის შინაარსის ევროკავშირის პოზიციად აღქმა დაუშვებელია.',
         'euForGeo': 'ევროკავშირი საქართველოსთვის',
         'addressLine': ['დავით აღმაშენებლის გამზირი 154,', 'თბილისი 0112,', 'საქართველო'],
         'address': 'მისამართი',
@@ -140,20 +140,11 @@ app.controller('myCtrl', [
             $scope.methods.open();
         };
 
-        $scope.flags = [{ id: 0, url: 'GE', title: 'EN' }, { id: 1, url: 'EN', title: 'GE' }]
+        $scope.flags = [{ id: 0, url: 'EN', title: 'EN', image: 'images/en.png' }, { id: 1, url: 'GE', title: 'GE', image: 'images/ge.png' }]
         $scope.lang = langs['EN'];
-        $scope.flagImgUrl = 'images/ge.png';
         $scope.activeLang = $scope.flags[0];
         $scope.changeLanguage = function(o) {
-            // $scope.activeLang = $scope.activeLang == o || !$scope.activeLang ? $scope.flags[1] : $scope.flags[0];
-            if (o == $scope.flags[0]) {
-                $scope.activeLang = $scope.flags[1];
-                $scope.flagImgUrl = 'images/en.png';
-            }
-            if (o == $scope.flags[1]) {
-                $scope.activeLang = $scope.flags[0];
-                $scope.flagImgUrl = 'images/ge.png';
-            }
+            o == $scope.flags[0] ? $scope.activeLang = $scope.flags[1] : $scope.activeLang = $scope.flags[0];
             $scope.lang = langs[$scope.activeLang.title];
         }
     }
