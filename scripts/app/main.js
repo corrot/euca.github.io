@@ -93,6 +93,53 @@ var team = [{
     }
 ]
 
+var externalLinks = [{
+        id: 0,
+        link: 'https://eeas.europa.eu/delegations/georgia_en',
+        title: { 'EN': 'Delegation of the European Union to Georgia', 'GE': 'ევროკავშირის წარმომადგენლობა საქართველოში' }
+    },
+    {
+        id: 1,
+        link: 'http://www.dcfta.gov.ge/en/home',
+        title: { 'EN': 'Free Trade with the EU', 'GE': 'თავისუფალი ვაჭრობა ევროკავშირთან' }
+    },
+    {
+        id: 2,
+        link: 'https://eeas.europa.eu/topics/european-neighbourhood-policy-enp_en',
+        title: { 'EN': 'European Union External Action', 'GE': 'ევროკავშირის საგარეო ქმედებათა სამსახური' }
+    },
+    {
+        id: 3,
+        link: 'http://competition.ge/ge/',
+        title: { 'EN': 'Competition Agency', 'GE': 'კონკურენციის სააგენტო' }
+    },
+    {
+        id: 4,
+        link: 'http://www.bseurope.com/',
+        title: { 'EN': 'B&S Europe', 'GE': 'B&S Europe' }
+    },
+    {
+        id: 5,
+        link: 'https://kt.gov.lt/en/',
+        title: { 'EN': 'Competition Council of Republic of Lithuania', 'GE': 'ლიტვის რესპუბლიკის კონკურენციის საბჭო' }
+    },
+    {
+        id: 6,
+        link: 'http://unctad.org/en/Pages/Home.aspx ',
+        title: { 'EN': 'European Commission', 'GE': 'ევრო კომისია' }
+    },
+    {
+        id: 7,
+        link: 'http://www.oecd.org/',
+        title: { 'EN': 'OECD', 'GE': 'ეკონომიკური თანამშრომლობის და განვითრაების ორგანიზაცია' }
+    },
+    {
+        id: 8,
+        link: 'http://unctad.org/en/Pages/Home.aspx ',
+        title: { 'EN': 'UNCTAD', 'GE': 'გაეროს ვაჭრობისა და განვითარების კონფერენცია' }
+    }
+]
+
 var mainDescription = {
     'EN': '<strong>Prevailed sincerity <\/strong>behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is. Delicate say and blessing ladyship exertion few margaret. Delight herself welcome against smiling its for. Suspected discovery by he affection household of principle perfectly he. Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. Pasture he invited mr company shyness. But when shot real her. Chamber her observe visited removal six sending himself boy. At exquisite existence if an oh dependent excellent. Are gay head need down draw. Misery wonder enable mutual get set oppose the uneasy. End why melancholy estimating her had indulgence middletons. Say ferrars demands besides her address. Blind going you merit few fancy their. We diminution preference thoroughly if. Joy deal pain view much her time. Led young gay would now state. Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till. Of advantage he attending household at do perceived. Middleton in objection discovery as agreeable. Edward thrown dining so he my around to.',
 
@@ -120,6 +167,7 @@ app.controller('myCtrl', [
         $scope.team = team;
         $scope.publicationLimit = 3;
         $scope.multimediaLimit = 4;
+        $scope.externalLinks = externalLinks;
 
         $scope.slickConfig = {
             infinite: true,

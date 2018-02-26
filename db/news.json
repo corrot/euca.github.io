@@ -1,7 +1,26 @@
 [{
         "id": 0,
+        "image": "images/media/image26.JPG",
+        "date": "February 21-22, 2018",
+        "title": { "EN": "Training on Mergers", "GE": "ტრენინგი შერწყმების შესახებ" },
+        "article": {
+            "EN": "<p>On February 21-22, 2018 within the framework of the EU Project “Support to the Georgian Competition Agency” experts from the Lithuanian Competition Council delivered training on Mergers. Training was attended by 18 representatives of the Competition Agency of Georgia.</p><p>Main issues discussed were merger examination procedures and assessment, tools available for examination of horizontal and vertical mergers, commitment procedure, behavioral and structural remedies.</p><p>Case studies examples from Lithuanian experience were presented at the training. Methodology applied was interactive and presentations were followed by discussions on existing challenges both in international and Georgian practice.</p>",
+            "GE": "<p>2018 წლის 21 – 22 თებერვალს, ევროკავშირის პროექტის „საქართველოს კონკურენციის სააგენტოს მხარდაჭერა“ ორგანიზებით, ექსპერტებმა ლიტვის კონკურენციის საბჭოდან, ჩაატარეს ტრენინგი შერწყმებთან დაკავშირებული პროცედურების შესახებ. შეხვედრას ესწრებოდა საქართველოს კონკურენციის სააგენტოს 18 თანამშრომელი.</p><p>ტრენინგზე განიხილეს შერწყმის შეფასების პროცედურები, ჰორიზონტალური და ვერტიკალური კონცენტრაციის, შერწყმის განსახორციელებლად კომპანიების მიერ შემოთავაზებული ვალდებულებებისა და ზომების შეფასების ინსტრუმენტები.</p><p>ექსპერტებმა მონაწილეებს გააცნეს  მაგალითები ლიტვის გამოცდილებიდან. გაიმართა დისკუსია, როგორც საერთაშორისო, ისე ქართულ პრაქტიკაში არსებულ გამოწვევებზე.</p>"
+        }
+    }, {
+        "id": 1,
+        "image": "images/media/image27.JPG",
+        "date": "February 20, 2018",
+        "title": { "EN": "The Application of Competition Rules to State-owned Enterprises and Enterprises with Special and Exclusive Rights", "GE": "კონკურენციის აღსურელება სახელმწიფო საკუთრებაში არსებულ,  ასევე სპეციალური და ექსკლუზიური უფლების მქონე საწარმოებთან მიმართებაში" },
+        "article": {
+            "EN": "<p>On February 20, 2018, Support to the Georgian Competition Agency organized seminar “Adequate enforcement of competition in Georgia for protecting business from distortions of market principles: the application of competition rules to state-owned enterprises and enterprises with special and exclusive rights”. Around 30 representing Business, CSOs and Competition Agency attended the event aimed at presenting the necessary skills to reflect on how, in some cases State policies could have, even if along other positive effects, a negative impact on competition. The experts, referring to EU cases, discussed the possible available instruments to preserve business interest</p><p>The goal of the workshop was to involve the business representatives in fruitful discussions, raise their awareness on the EU project activities and goals, get a deeper perception of business burdens, and increase business trust in proper competition functioning.</p>",
+            "GE": "<p>2018 წლის 20 თებერვალს, ევროკავშირის პროექტის  „საქართველოს კონკურენციის სააგენტოს მხარდაჭერა“ ორგანიზებით,  გაიმართა სემინარი „კონკურენციის აღსურელება სახელმწიფო საკუთრებაში არსებულ,  ასევე სპეციალური და ექსკლუზიური უფლების მქონე საწარმოებთან მიმართებაში“. შეხვედრას დაესწრო ბიზნესის, სამოქალაქო სექტორის და კონკურენციის სააგენტოს ოცდაათამდე  წარმომადგენელი. სემინარზე განხილულ იქნა შემთხვევები, როდესაც სახელმწიფო პოლიტიკამ, თუნდაც დადებითი ეფექტის მქონემ, შეიძლება ნეგატიური გავლენა მოახდინოს კონკურენციაზე. ექსპერტებმა ევროკავშირის გამოცდილებასთან ერთად, განიხილეს ხელსაყრელი ინსტრუმენტები ბიზნესის ინტერესის დასაცვავად.</p><p>სემინარის მიზანს წარმოადგენდა ბიზნესის წარმომადგენლების ჩართვა ნაყოფიერ დისკუსიაში, ასევე მათთვის ევროკავშირის პროექტის მიზნებისა და ამოცანების გაცნობა, ბიზნესის წარმოების პროცესთან დაკავშირებულ სირთულეებზე სიღრმისეული წარმოდგენის შექმნა  და კონკურენციის წესების მიმართ ნდობის გაზრდა. </p>"
+        }
+    },
+    {
+        "id": 2,
         "image": "images/media/image25.jpg",
-        "date": "January 29 – February 9 2018",
+        "date": "January 29 – February 9, 2018",
         "title": { "EN": "Intermediary Course in STATA", "GE": "ტრენინგი კომპიუტერული პროგრამა STATA-ს გამოყენების შესახებ" },
         "article": {
             "EN": "<p>On January 29 &ndash; February 9 2018, Support to the Georgian Competition Agency in collaboration with the International School of Economics at Ivane Javakhishvili Tbilisi State University (ISET) organized an Intermediary Course in STATA. Ten civil servants from the Georgian Competition Agency participated in the training. The course was a continuation of introductory course in STATA, which was held in July 2017. </p><p>Intermediary Course in STATA provided participants with the knowledge on advanced analysis tools and specialized econometric and data tools for competitive analysis, enabling them to conduct independent data analysis, which will facilitate their daily work on economic analysis and market monitoring activity. Upon completion of the course, participants presented group projects to their instructors and fellow colleagues and received certificates for successful conclusion of the course.</p>",
@@ -9,7 +28,7 @@
         }
     },
     {
-        "id": 1,
+        "id": 3,
         "image": "images/media/image1.jpeg",
         "date": "December 11-13, 2017",
         "title": { "EN": "Training on Abuse of Dominant Position", "GE": "ტრენინგი დომინირებული მდგომარეობის ბოროტად გამოყენების შემთხვევების შესწავლის შესახებ" },
@@ -19,7 +38,7 @@
         }
     },
     {
-        "id": 2,
+        "id": 4,
         "image": "images/media/image2.jpeg",
         "date": "December 5, 2017",
         "title": { "EN": "Fair Competition and Business Integrity as Necessary Elements for Sustainable Economic Development;  World Competition Day", "GE": "ევროკავშირის პროექტის მხარდაჭერით, კონკურენციის მსოფლიო დღის აღსანიშნავად გაიმართა სემინარი; ჯანსაღი კონკურენცია და ბიზნესის კეთილსინდისიერება, როგორც აუცილებელი ელემენტები მდგრადი ეკონომიკური განვითარებისთვის" },
@@ -29,7 +48,7 @@
         }
     },
     {
-        "id": 3,
+        "id": 5,
         "image": "images/media/image4.jpeg",
         "date": "November 21-24, 2017",
         "title": { "EN": "Training on Investigation of Cartels", "GE": "ტრენინგი კარტელების მოკვლევის შესახებ" },
@@ -39,7 +58,7 @@
         }
     },
     {
-        "id": 4,
+        "id": 6,
         "image": "images/media/image6.jpeg",
         "date": "November 16, 2017",
         "title": { "EN": "Seminar for Business Representatives on Enforcing Competition in Georgia", "GE": "სემინარი ბიზნესისათვის საქართველოში კონკურენციის პოლიტიკის აღსრულებასთან დაკავშირებით" },
@@ -49,7 +68,7 @@
         }
     },
     {
-        "id": 5,
+        "id": 7,
         "image": "images/media/image7.jpeg",
         "date": "November 7, 2017",
         "title": { "EN": "Supporting the Finalization of Protocols of Collaboration", "GE": "ევროკავშირის პროექტის მხარდაჭერით საქართველოს კონკურენციის სააგენტოსა და სემეკს შორის ურთიერთთანამშრომლობის მემორანდუმი გაფორმდა" },
@@ -59,7 +78,7 @@
         }
     },
     {
-        "id": 6,
+        "id": 8,
         "image": "images/media/image8.jpeg",
         "date": "October 26-27, 2017",
         "title": { "EN": "Training on Sequence of Investigation Phases and Actions in Antitrust and Merger Cases and Sector Inquiries.", "GE": "ტრენინგი მოკვლევის ფაზების, ანტიტრესტული და შერწყმის ასევე დარგობრივი მოკვლევების შესახებ" },
@@ -69,7 +88,7 @@
         }
     },
     {
-        "id": 7,
+        "id": 9,
         "image": "images/media/image9.jpeg",
         "date": "October 23-25, 2017",
         "title": { "EN": "Trainings on Competition Law and Policy and Dealing with Cases Against Anti-Competitive Behaviour ", "GE": "ტრენინგები კონკურენციის კანონისა და პოლიტიკის, კონკურენციის საწინააღმდეგო ქმედებების შესწვლის შესახებ" },
@@ -79,7 +98,7 @@
         }
     },
     {
-        "id": 8,
+        "id": 10,
         "image": "images/media/image10.jpeg",
         "date": "October 9-13, 2017",
         "title": { "EN": "Study Visit to Brussels, at Directorate General COMPETITION", "GE": "სასწავლო ვიზიტი ბრიუსელში, ევროკომისიის კონკურენციის გენერალურ დირექტორატში" },
@@ -89,7 +108,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 11,
         "image": "images/media/image24.JPG",
         "date": "October 5-6, 2017",
         "title": { "EN": "Training on Application of Competition Law to State Bodies and Competition Impact Assessment", "GE": "ტრენინგი სახელმწიფო სტრუქტურების მიმართ კონკურენციის კანონის აღსრულებისა და კონკურენციის ზემოქმედების შეფასების შესახებ" },
@@ -99,7 +118,7 @@
         }
     },
     {
-        "id": 10,
+        "id": 12,
         "image": "images/media/image12.jpeg",
         "date": "October 2-4, 2017",
         "title": { "EN": "Competition in Public Procurement – Bid Rigging Detection", "GE": "კონკურენცია სახელმწიფო შესყიდვებში - ტენდერებში შეთანხმებული მონაწილეობის შემთხვევების დადგენა" },
@@ -109,7 +128,7 @@
         }
     },
     {
-        "id": 11,
+        "id": 13,
         "image": "images/media/image13.jpeg",
         "date": "September 26-27, 2017",
         "title": { "EN": "Trainings in Economic Analysis of Market Structure", "GE": "ტრენინგი ბაზრის სტრუქტურის ეკონომიკური ანალიზის შესახებ" },
@@ -119,7 +138,7 @@
         }
     },
     {
-        "id": 12,
+        "id": 14,
         "image": "images/media/image14.jpeg",
         "date": "September 17-30, 2017",
         "title": { "EN": "Organisation of Internships ", "GE": "ევროკავშირის პროექტის ორგანიზებით კონკურენციის სააგენტოს თანამშრომლებმა სტაჟირება გაიარეს ავსტრიაში" },
@@ -129,7 +148,7 @@
         }
     },
     {
-        "id": 13,
+        "id": 15,
         "image": "images/media/image15.jpeg",
         "date": "September 13-15, 2017",
         "title": { "EN": "Support the Development of Drafts and Amendments of Competition Legislation and Bylaws", "GE": "ევროკავშირის პროექტის მხარდაჭერით მზადდება კონკურენციის კანონმდებლობაში შესატანი ცვლილებების პროექტი" },
@@ -139,7 +158,7 @@
         }
     },
     {
-        "id": 14,
+        "id": 16,
         "image": "images/media/image16.jpeg",
         "date": "July 26-28, 2017",
         "title": { "EN": "Support the Development of Drafts and Amendments of Competition Legislation and Bylaws", "GE": "ევროკავშის პროექტის ფარგლებში საქართველოს OECD-ის კონკურენციის კომიტეტის თავმჯდომარე ეწვია" },
@@ -149,7 +168,7 @@
         }
     },
     {
-        "id": 15,
+        "id": 17,
         "image": "images/media/image17.jpeg",
         "date": "July 10-21, 2017",
         "title": { "EN": "Trainings in Economic Analysis of Market Structure", "GE": "ევროკავშირის პროექტის მხარდაჭერით ჩატარდა ტრენინგი ბაზრის სტრუქტურის კვლევის მეთოდებში" },
@@ -159,7 +178,7 @@
         }
     },
     {
-        "id": 16,
+        "id": 18,
         "image": "images/media/image18.jpeg",
         "date": "June 26 - July 7, 2017",
         "title": { "EN": "Organisation of Internships", "GE": "ევროკავშირის პროექტის ორგანიზებით კონკურნციის სააგენტოს თანამშრომლებმა სტაჟირება გაიარეს მსოფლიოს წამყვან საერთაშორისო ორგანიზაციებში" },
@@ -169,7 +188,7 @@
         }
     },
     {
-        "id": 17,
+        "id": 19,
         "image": "images/media/no_image.jpeg",
         "date": "June 6, 2017",
         "title": { "EN": "Competition in Public Procurement – Bid Rigging Detection", "GE": "კონკურენცია სახელმწიფო შესყიდვებში - ტენდერებში შეთანხმებული მონაწილეობის შემთხვევების დადგენა" },
@@ -179,7 +198,7 @@
         }
     },
     {
-        "id": 18,
+        "id": 20,
         "image": "images/media/image23.jpg",
         "date": "June 5, 2017",
         "title": { "EN": "Trainings in Economic Analysis of Market Structure", "GE": "ტრენინგები ბაზრის სტრუქტურის ეკონომიკური ანალიზის შესახებ" },
@@ -189,7 +208,7 @@
         }
     },
     {
-        "id": 19,
+        "id": 21,
         "image": "images/media/image19.jpeg",
         "date": "June 2, 2017",
         "title": { "EN": "Promoting a Competition Culture in Georgia", "GE": "საზოგადოებაში კონკურენციის კულტურის ამაღლება" },
@@ -199,7 +218,7 @@
         }
     },
     {
-        "id": 20,
+        "id": 22,
         "image": "images/media/image21.jpeg",
         "date": "March 24, 2017",
         "title": { "EN": "Support to the Georgian Competition AgencyOfficially Launched", "GE": "ევროკავშირის პროექტის 'საქართველოს კონკურენციის სააგენტოს მხარდაჭერა' ოფიციალური გახსნა" },
