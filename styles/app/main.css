@@ -467,6 +467,10 @@ h1 {
     text-decoration: none;
 }
 
+.external-a>a {
+    display: block;
+}
+
 
 /* anchor (goto) */
 

@@ -96,47 +96,72 @@ var team = [{
 var externalLinks = [{
         id: 0,
         link: 'https://eeas.europa.eu/delegations/georgia_en',
-        title: { 'EN': 'Delegation of the European Union to Georgia', 'GE': 'ევროკავშირის წარმომადგენლობა საქართველოში' }
+        title: { 'EN': 'Delegation of the European Union to Georgia', 'GE': 'ევროკავშირის წარმომადგენლობა საქართველოში' },
+        facebook: 'https://www.facebook.com/EuropeanUnioninGeorgia',
+        twitter: 'https://twitter.com/EUinGeorgia'
     },
     {
         id: 1,
         link: 'http://www.dcfta.gov.ge/en/home',
-        title: { 'EN': 'Free Trade with the EU', 'GE': 'თავისუფალი ვაჭრობა ევროკავშირთან' }
+        title: { 'EN': 'Deep and Comprehensive Free Trade Area', 'GE': 'ღრმა და ყოვლისმომცველი თავისუფალი სავაჭრო სივრცის შესახებ შეთანხმება' },
+        facebook: '',
+        twitter: ''
     },
     {
         id: 2,
         link: 'https://eeas.europa.eu/topics/european-neighbourhood-policy-enp_en',
-        title: { 'EN': 'European Union External Action', 'GE': 'ევროკავშირის საგარეო ქმედებათა სამსახური' }
+        title: { 'EN': 'European Union External Action', 'GE': 'ევროკავშირის საგარეო ქმედებათა სამსახური' },
+        facebook: '',
+        twitter: ''
     },
     {
         id: 3,
         link: 'http://competition.ge/ge/',
-        title: { 'EN': 'Competition Agency', 'GE': 'კონკურენციის სააგენტო' }
+        title: { 'EN': 'Competition Agency of Georgia', 'GE': 'საქართველოს კონკურენციის სააგენტო' },
+        facebook: '',
+        twitter: ''
     },
     {
         id: 4,
         link: 'http://www.bseurope.com/',
-        title: { 'EN': 'B&S Europe', 'GE': 'B&S Europe' }
+        title: { 'EN': 'B&S Europe', 'GE': 'B&S Europe' },
+        facebook: '',
+        twitter: ''
     },
     {
         id: 5,
         link: 'https://kt.gov.lt/en/',
-        title: { 'EN': 'Competition Council of Republic of Lithuania', 'GE': 'ლიტვის რესპუბლიკის კონკურენციის საბჭო' }
+        title: { 'EN': 'Competition Council of Republic of Lithuania', 'GE': 'ლიტვის რესპუბლიკის კონკურენციის საბჭო' },
+        facebook: '',
+        twitter: ''
     },
     {
         id: 6,
-        link: 'http://unctad.org/en/Pages/Home.aspx ',
-        title: { 'EN': 'European Commission', 'GE': 'ევრო კომისია' }
+        link: 'http://ec.europa.eu/competition/',
+        title: { 'EN': 'European Commission', 'GE': 'ევროკომისია' },
+        facebook: '',
+        twitter: ''
     },
     {
         id: 7,
         link: 'http://www.oecd.org/',
-        title: { 'EN': 'OECD', 'GE': 'ეკონომიკური თანამშრომლობის და განვითრაების ორგანიზაცია' }
+        title: { 'EN': 'OECD', 'GE': 'ეკონომიკური თანამშრომლობის და განვითრაების ორგანიზაცია' },
+        facebook: '',
+        twitter: ''
     },
     {
         id: 8,
         link: 'http://unctad.org/en/Pages/Home.aspx ',
-        title: { 'EN': 'UNCTAD', 'GE': 'გაეროს ვაჭრობისა და განვითარების კონფერენცია' }
+        title: { 'EN': 'UNCTAD', 'GE': 'გაეროს ვაჭრობისა და განვითარების კონფერენცია' },
+        facebook: '',
+        twitter: ''
+    },
+    {
+        id: 9,
+        link: 'http://www.internationalcompetitionnetwork.org/ ',
+        title: { 'EN': 'International Competition Network', 'GE': 'საერთაშორისო კონკურენციის ქსელი' },
+        facebook: '',
+        twitter: ''
     }
 ]
 

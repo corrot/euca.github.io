@@ -2,7 +2,11 @@
     <div class="container">
         <h1><span ng-bind="lang['ExternalLinks']"></span></h1>
         <ul type="disc">
-            <li ng-repeat="e in externalLinks"><a href="{{e.link}}"><span ng-bind="e.title[activeLang.title]"></span></a></li>
+            <li class="external-a" ng-repeat="e in externalLinks">
+                <a href="{{e.link}}"><span ng-bind="e.title[activeLang.title]"></span></a>
+                <a ng-show="e.facebook" href="{{e.facebook}}">Facebook</a>
+                <a ng-show="e.twitter" href="{{e.twitter}">Twitter</a>
+            </li>
         </ul>
     </div>
 </div>
